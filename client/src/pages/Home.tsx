@@ -89,13 +89,12 @@ export default function Home() {
             </p>
           </div>
           
-          {/* Price Box - Piccolo */}
+          {/* Acquista Button - Piccolo */}
           <Link href="#contatti">
             <div className="bg-gradient-to-br from-primary to-secondary rounded-lg p-3 text-white text-center min-w-fit">
               <Button size="sm" className="w-full bg-white text-primary hover:bg-slate-100 py-1 px-3 text-xs font-semibold">
                 Acquista
               </Button>
-              <div className="text-xs font-semibold mt-1">3€</div>
             </div>
           </Link>
         </section>
