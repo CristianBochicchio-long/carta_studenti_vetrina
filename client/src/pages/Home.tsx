@@ -88,30 +88,20 @@ export default function Home() {
             Categorie
           </h2>
 
-          <div className="space-y-32">
-            {categories.map((category, index) => {
-              const isEven = index % 2 === 0;
-              return (
-                <Link key={category.href} href={category.href}>
-                  <div className="flex rounded-2xl overflow-hidden shadow-lg active:scale-95 transition-transform h-32">
-                    {/* Parte con colore (nome + icona) */}
-                    <div className={`${category.color} text-white flex items-center justify-center gap-3 flex-1 px-6 py-4 ${isEven ? 'rounded-l-2xl' : 'rounded-r-2xl order-2'}`}>
-                      <div className="text-3xl">{category.icon}</div>
-                      <div className={isEven ? 'text-left' : 'text-right'}>
-                        <h3 className="text-lg font-bold leading-tight">{category.title}</h3>
-                      </div>
-                    </div>
-
-                    {/* Parte senza colore (descrizione) */}
-                    <div className={`bg-white flex items-center px-6 py-4 flex-1 ${isEven ? 'rounded-r-2xl' : 'rounded-l-2xl order-1'}`}>
-                      <p className={`text-sm text-foreground font-medium ${isEven ? 'text-left' : 'text-right'}`}>
-                        {category.description}
-                      </p>
+          <div className="space-y-8 max-w-2xl mx-auto">
+            {categories.map((category) => (
+              <Link key={category.href} href={category.href}>
+                <div className={`${category.color} text-white rounded-2xl p-6 shadow-lg active:scale-95 transition-transform flex items-center justify-between`}>
+                  <div className="flex items-center gap-4">
+                    <div className="text-4xl">{category.icon}</div>
+                    <div>
+                      <h3 className="text-xl font-bold">{category.title}</h3>
+                      <p className="text-sm opacity-90">{category.description}</p>
                     </div>
                   </div>
-                </Link>
-              );
-            })}
+                </div>
+              </Link>
+            ))}
           </div>
         </section>
       </main>
