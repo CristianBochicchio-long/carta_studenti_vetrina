@@ -1,26 +1,34 @@
 import { Link } from "wouter";
-import { APP_LOGO, APP_TITLE } from "@/const";
+import { Button } from "@/components/ui/button";
 
 export default function Header() {
   return (
-    <header className="sticky top-0 z-50 w-full bg-white shadow-sm border-b border-border">
-      <div className="container flex items-center justify-between h-16">
+    <header className="sticky top-0 z-50 bg-white shadow-sm border-b border-border">
+      <div className="container h-20 flex items-center justify-between">
+        {/* Logo */}
         <Link href="/" className="flex items-center gap-3 hover:opacity-80 transition-opacity">
-          {APP_LOGO && (
-            <img 
-              src={APP_LOGO} 
-              alt={APP_TITLE}
-              className="h-10 w-10 object-contain"
-            />
-          )}
-          <span className="font-bold text-xl text-primary hidden sm:inline">
-            {APP_TITLE}
-          </span>
+          <img 
+            src="/logo-carta-studenti.png" 
+            alt="Carta Studenti" 
+            className="h-12 w-auto"
+          />
+          <div className="hidden sm:block">
+            <h1 className="text-xl font-bold text-primary">Carta Studenti</h1>
+            <p className="text-xs text-muted-foreground">Convenzioni Esclusive</p>
+          </div>
         </Link>
-        
-        <nav className="hidden md:flex items-center gap-8">
-          <Link href="/" className="text-sm font-medium text-foreground hover:text-primary transition-colors">
-            Home
+
+        {/* Navigation */}
+        <nav className="flex items-center gap-4">
+          <Link href="#contatti">
+            <Button variant="ghost" className="text-foreground hover:text-primary">
+              Contatti
+            </Button>
+          </Link>
+          <Link href="/acquista">
+            <Button className="bg-secondary hover:bg-secondary/90 text-white">
+              Acquista
+            </Button>
           </Link>
         </nav>
       </div>

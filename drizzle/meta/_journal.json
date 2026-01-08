@@ -1,0 +1,27 @@
+{
+  "version": "7",
+  "dialect": "mysql",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "5",
+      "when": 1767747542654,
+      "tag": "0000_famous_sue_storm",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "5",
+      "when": 1767747713216,
+      "tag": "0001_typical_wendigo",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "5",
+      "when": 1767832175126,
+      "tag": "0002_slow_the_watchers",
+      "breakpoints": true
+    }
+  ]
+}
