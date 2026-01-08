@@ -88,12 +88,12 @@ export default function Home() {
             Categorie
           </h2>
 
-          <div className="space-y-20">
+          <div className="space-y-32">
             {categories.map((category, index) => {
               const isEven = index % 2 === 0;
               return (
                 <Link key={category.href} href={category.href}>
-                  <div className="flex rounded-2xl overflow-hidden shadow-lg active:scale-95 transition-transform h-24">
+                  <div className="flex rounded-2xl overflow-hidden shadow-lg active:scale-95 transition-transform h-32">
                     {/* Parte con colore (nome + icona) */}
                     <div className={`${category.color} text-white flex items-center justify-center gap-3 flex-1 px-6 py-4 ${isEven ? 'rounded-l-2xl' : 'rounded-r-2xl order-2'}`}>
                       <div className="text-3xl">{category.icon}</div>
