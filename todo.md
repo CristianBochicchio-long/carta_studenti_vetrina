@@ -46,3 +46,6 @@
 - [x] Aggiungere link Instagram nella pagina acquista
 - [x] Aggiungere link telefono nella pagina acquista
 - [x] Applicare angoli arrotondati a tutti i riquadri
+- [ ] In attesa: Email di contatto reale
+- [ ] In attesa: Numero di telefono reale
+- [ ] In attesa: Profilo Instagram reale

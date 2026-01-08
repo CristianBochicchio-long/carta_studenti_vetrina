@@ -50,19 +50,23 @@ export default function Home() {
         {/* Logo, Descrizione e Acquista Section */}
         <section className="py-6 px-4 flex items-start justify-between gap-4">
           <div className="flex-1">
-            {/* Logo con riquadro multicolor dietro */}
+            {/* Logo senza riquadro */}
             <div className="mb-4">
-              <div className="bg-gradient-to-br from-primary via-secondary to-primary rounded-2xl p-4 w-fit">
-                <img 
-                  src="/logo-carta-studenti.png" 
-                  alt="Carta Studenti" 
-                  className="h-24 w-auto"
-                />
+              <img 
+                src="/logo-carta-studenti.png" 
+                alt="Carta Studenti" 
+                className="h-24 w-auto"
+              />
+            </div>
+            
+            {/* Titolo con riquadro multicolor dietro */}
+            <div className="mb-2 w-fit">
+              <div className="bg-gradient-to-br from-primary via-secondary to-primary rounded-2xl px-4 py-2 inline-block">
+                <h1 className="text-2xl font-bold text-foreground">Carta Studenti</h1>
               </div>
             </div>
             
-            {/* Titolo e descrizione */}
-            <h1 className="text-2xl font-bold text-foreground mb-2">Carta Studenti</h1>
+            {/* Descrizione */}
             <p className="text-sm text-muted-foreground leading-tight max-w-xs">
               Sconti esclusivi per studenti delle superiori e università a Potenza
             </p>
@@ -84,7 +88,7 @@ export default function Home() {
             Categorie
           </h2>
 
-          <div className="space-y-6">
+          <div className="space-y-10">
             {categories.map((category, index) => {
               const isEven = index % 2 === 0;
               return (
