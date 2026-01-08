@@ -2,8 +2,37 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
+import { useState } from "react";
 
 export default function Home() {
+  const [newsletterEmail, setNewsletterEmail] = useState("");
+  const [loading, setLoading] = useState(false);
+
+  const handleNewsletterSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setLoading(true);
+    
+    try {
+      const response = await fetch("/api/newsletter", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ email: newsletterEmail }),
+      });
+      
+      if (response.ok) {
+        alert("Grazie per l'iscrizione! Riceverai gli aggiornamenti sugli sconti.");
+        setNewsletterEmail("");
+      } else {
+        alert("Errore nell'iscrizione. Riprova più tardi.");
+      }
+    } catch (error) {
+      console.error("Error:", error);
+      alert("Errore nell'iscrizione. Riprova più tardi.");
+    } finally {
+      setLoading(false);
+    }
+  };
+
   const categories = [
     {
       title: "Abbigliamento",
@@ -104,16 +133,23 @@ export default function Home() {
           <p className="text-center text-muted-foreground text-xs mb-4">
             Ricevi notifiche sui nuovi sconti
           </p>
-          <div className="flex flex-col gap-2">
+          <form onSubmit={handleNewsletterSubmit} className="flex flex-col gap-2">
             <input
               type="email"
+              required
+              value={newsletterEmail}
+              onChange={(e) => setNewsletterEmail(e.target.value)}
               placeholder="Il tuo email"
               className="w-full px-4 py-3 rounded-lg border border-border focus:outline-none focus:ring-2 focus:ring-primary text-sm"
             />
-            <Button className="w-full bg-primary hover:bg-primary/90 text-white py-3 text-base font-semibold">
-              Iscriviti
+            <Button 
+              type="submit" 
+              disabled={loading}
+              className="w-full bg-primary hover:bg-primary/90 text-white py-3 text-base font-semibold"
+            >
+              {loading ? "Iscrizione in corso..." : "Iscriviti"}
             </Button>
-          </div>
+          </form>
         </section>
 
         {/* Contact Section */}

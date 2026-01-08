@@ -147,4 +147,38 @@ export async function saveContactMessage(nome: string, email: string, oggetto: s
   }
 }
 
+// Get all newsletters
+export async function getAllNewsletters() {
+  const db = await getDb();
+  if (!db) {
+    console.warn("[Database] Cannot get newsletters: database not available");
+    return [];
+  }
+
+  try {
+    const result = await db.select().from(newsletters).where(eq(newsletters.iscritto, 1));
+    return result;
+  } catch (error) {
+    console.error("[Database] Failed to get newsletters:", error);
+    return [];
+  }
+}
+
+// Get all contact messages
+export async function getAllContactMessages() {
+  const db = await getDb();
+  if (!db) {
+    console.warn("[Database] Cannot get messages: database not available");
+    return [];
+  }
+
+  try {
+    const result = await db.select().from(messaggiContatti);
+    return result;
+  } catch (error) {
+    console.error("[Database] Failed to get messages:", error);
+    return [];
+  }
+}
+
 // Note: Student cards are physical, no digital card management needed

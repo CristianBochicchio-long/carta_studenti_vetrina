@@ -12,12 +12,31 @@ export default function ContattiPage() {
     oggetto: "",
     messaggio: "",
   });
+  const [loading, setLoading] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    console.log("Form submitted:", formData);
-    alert("Grazie per il tuo messaggio! Ti contatteremo presto.");
-    setFormData({ nome: "", email: "", oggetto: "", messaggio: "" });
+    setLoading(true);
+    
+    try {
+      const response = await fetch("/api/contatti", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
+      });
+      
+      if (response.ok) {
+        alert("Grazie per il tuo messaggio! Ti contatteremo presto.");
+        setFormData({ nome: "", email: "", oggetto: "", messaggio: "" });
+      } else {
+        alert("Errore nell'invio del messaggio. Riprova più tardi.");
+      }
+    } catch (error) {
+      console.error("Error:", error);
+      alert("Errore nell'invio del messaggio. Riprova più tardi.");
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
@@ -146,8 +165,13 @@ export default function ContattiPage() {
               />
             </div>
 
-            <Button type="submit" size="lg" className="w-full bg-primary hover:bg-primary/90 text-white py-6 text-base font-semibold">
-              Invia Messaggio
+            <Button 
+              type="submit" 
+              size="lg" 
+              disabled={loading}
+              className="w-full bg-primary hover:bg-primary/90 text-white py-6 text-base font-semibold"
+            >
+              {loading ? "Invio in corso..." : "Invia Messaggio"}
             </Button>
           </form>
         </section>
