@@ -88,20 +88,23 @@ export default function Home() {
           </h2>
 
           <div className="space-y-3">
-            {categories.map((category) => (
-              <Link key={category.href} href={category.href}>
-                <button className={`w-full ${category.color} rounded-xl p-4 text-white shadow-lg active:scale-95 transition-transform flex items-center justify-between`}>
-                  <div className="flex items-center gap-3 flex-1">
-                    <div className="text-3xl">{category.icon}</div>
-                    <div className="text-left">
-                      <h3 className="text-lg font-bold">{category.title}</h3>
-                      <p className="text-xs opacity-90">{category.description}</p>
+            {categories.map((category, index) => {
+              const isEven = index % 2 === 0;
+              return (
+                <Link key={category.href} href={category.href}>
+                  <button className={`w-full ${category.color} rounded-xl p-4 text-white shadow-lg active:scale-95 transition-transform flex items-center justify-between ${isEven ? 'flex-row' : 'flex-row-reverse'}`}>
+                    <div className={`flex items-center gap-3 flex-1 ${isEven ? '' : 'justify-end'}`}>
+                      <div className="text-3xl">{category.icon}</div>
+                      <div className={isEven ? 'text-left' : 'text-right'}>
+                        <h3 className="text-lg font-bold">{category.title}</h3>
+                        <p className="text-xs opacity-90">{category.description}</p>
+                      </div>
                     </div>
-                  </div>
-                  <div className="text-2xl ml-2">→</div>
-                </button>
-              </Link>
-            ))}
+                    <div className={`text-2xl ${isEven ? 'ml-2' : 'mr-2'}`}>→</div>
+                  </button>
+                </Link>
+              );
+            })}
           </div>
         </section>
 
