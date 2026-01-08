@@ -92,16 +92,22 @@ export default function Home() {
               const isEven = index % 2 === 0;
               return (
                 <Link key={category.href} href={category.href}>
-                  <button className={`w-full ${category.color} rounded-xl p-4 text-white shadow-lg active:scale-95 transition-transform flex items-center justify-between ${isEven ? 'flex-row' : 'flex-row-reverse'}`}>
-                    <div className={`flex items-center gap-3 flex-1 ${isEven ? '' : 'justify-end'}`}>
+                  <div className="flex rounded-xl overflow-hidden shadow-lg active:scale-95 transition-transform h-24">
+                    {/* Parte con colore (nome + icona) */}
+                    <div className={`${category.color} text-white flex items-center justify-center gap-3 flex-1 px-4 ${isEven ? 'rounded-l-xl' : 'rounded-r-xl order-2'}`}>
                       <div className="text-3xl">{category.icon}</div>
                       <div className={isEven ? 'text-left' : 'text-right'}>
-                        <h3 className="text-lg font-bold">{category.title}</h3>
-                        <p className="text-xs opacity-90">{category.description}</p>
+                        <h3 className="text-lg font-bold leading-tight">{category.title}</h3>
                       </div>
                     </div>
-                    <div className={`text-2xl ${isEven ? 'ml-2' : 'mr-2'}`}>→</div>
-                  </button>
+
+                    {/* Parte senza colore (descrizione) */}
+                    <div className={`bg-white flex items-center px-4 flex-1 ${isEven ? 'rounded-r-xl' : 'rounded-l-xl order-1'}`}>
+                      <p className={`text-sm text-foreground font-medium ${isEven ? 'text-left' : 'text-right'}`}>
+                        {category.description}
+                      </p>
+                    </div>
+                  </div>
                 </Link>
               );
             })}
