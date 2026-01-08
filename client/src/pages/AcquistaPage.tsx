@@ -21,12 +21,19 @@ export default function AcquistaPage() {
         </div>
 
         {/* Hero */}
-        <section className="px-4 py-6 bg-gradient-to-r from-primary/10 via-secondary/10 to-primary/10">
+        <section className="px-4 py-8 text-center">
+          <div className="bg-gradient-to-br from-primary via-secondary to-primary rounded-2xl p-6 w-fit mx-auto mb-6">
+            <img 
+              src="/logo-carta-studenti.png" 
+              alt="Carta Studenti" 
+              className="h-32 w-auto"
+            />
+          </div>
           <h1 className="text-3xl font-bold text-foreground mb-2">
-            Acquista la Tua Carta
+            Acquista la Carta
           </h1>
           <p className="text-sm text-muted-foreground">
-            Accedi a tutte le convenzioni esclusive
+            Sconti esclusivi per gli studenti
           </p>
         </section>
 
@@ -34,117 +41,117 @@ export default function AcquistaPage() {
         <section className="px-4 py-6">
           <div className="bg-gradient-to-br from-primary to-secondary rounded-2xl p-8 text-center text-white mb-6">
             <div className="text-5xl font-bold mb-2">3€</div>
-            <p className="text-sm opacity-90">Una volta sola</p>
+            <p className="text-sm opacity-90">Pagamento in contanti</p>
           </div>
-
-          <div className="space-y-3 mb-6">
-            <div className="flex gap-3">
-              <div className="text-2xl flex-shrink-0">✓</div>
-              <div>
-                <h3 className="font-bold text-foreground text-sm">50+ Negozi Partner</h3>
-                <p className="text-xs text-muted-foreground">Convenzioni in tutte le categorie</p>
-              </div>
-            </div>
-            <div className="flex gap-3">
-              <div className="text-2xl flex-shrink-0">✓</div>
-              <div>
-                <h3 className="font-bold text-foreground text-sm">Sconti fino al 30%</h3>
-                <p className="text-xs text-muted-foreground">Su sport, cibo, salute e altro</p>
-              </div>
-            </div>
-            <div className="flex gap-3">
-              <div className="text-2xl flex-shrink-0">✓</div>
-              <div>
-                <h3 className="font-bold text-foreground text-sm">Notifiche Sconti</h3>
-                <p className="text-xs text-muted-foreground">Ricevi aggiornamenti via newsletter</p>
-              </div>
-            </div>
-            <div className="flex gap-3">
-              <div className="text-2xl flex-shrink-0">✓</div>
-              <div>
-                <h3 className="font-bold text-foreground text-sm">Carta Fisica</h3>
-                <p className="text-xs text-muted-foreground">Ricevi la tua carta per posta</p>
-              </div>
-            </div>
-          </div>
-
-          <Button size="lg" className="w-full bg-green-500 hover:bg-green-600 text-white py-6 text-base font-semibold mb-6">
-            Procedi all'Acquisto
-          </Button>
         </section>
 
         {/* How it works */}
-        <section className="px-4 py-6 bg-slate-50">
-          <h2 className="text-lg font-bold text-foreground mb-4">Come Funziona</h2>
+        <section className="px-4 py-6">
+          <h2 className="text-xl font-bold text-foreground mb-6">Come Acquistare</h2>
           
-          <div className="space-y-3">
-            <div className="flex gap-3">
-              <div className="flex-shrink-0 w-8 h-8 bg-primary text-white rounded-full flex items-center justify-center font-bold text-sm">
+          <div className="space-y-4">
+            <div className="flex gap-4">
+              <div className="flex-shrink-0 w-10 h-10 bg-primary text-white rounded-full flex items-center justify-center font-bold">
                 1
               </div>
               <div>
-                <h3 className="font-bold text-foreground text-sm">Compila il modulo</h3>
-                <p className="text-xs text-muted-foreground">Inserisci i tuoi dati</p>
+                <h3 className="font-bold text-foreground text-sm">Contattaci</h3>
+                <p className="text-xs text-muted-foreground mt-1">Scrivi un messaggio o contattaci tramite i canali sottostanti</p>
               </div>
             </div>
-            <div className="flex gap-3">
-              <div className="flex-shrink-0 w-8 h-8 bg-primary text-white rounded-full flex items-center justify-center font-bold text-sm">
+            <div className="flex gap-4">
+              <div className="flex-shrink-0 w-10 h-10 bg-primary text-white rounded-full flex items-center justify-center font-bold">
                 2
               </div>
               <div>
-                <h3 className="font-bold text-foreground text-sm">Effettua il pagamento</h3>
-                <p className="text-xs text-muted-foreground">3€ in contanti presso i nostri punti vendita</p>
+                <h3 className="font-bold text-foreground text-sm">Accordati sul ritiro</h3>
+                <p className="text-xs text-muted-foreground mt-1">Decidi dove e quando ritirare la tua carta</p>
               </div>
             </div>
-            <div className="flex gap-3">
-              <div className="flex-shrink-0 w-8 h-8 bg-primary text-white rounded-full flex items-center justify-center font-bold text-sm">
+            <div className="flex gap-4">
+              <div className="flex-shrink-0 w-10 h-10 bg-primary text-white rounded-full flex items-center justify-center font-bold">
                 3
               </div>
               <div>
-                <h3 className="font-bold text-foreground text-sm">Ricevi la carta</h3>
-                <p className="text-xs text-muted-foreground">La carta ti verrà spedita a casa</p>
+                <h3 className="font-bold text-foreground text-sm">Paga in contanti</h3>
+                <p className="text-xs text-muted-foreground mt-1">Paga 3€ al momento del ritiro</p>
               </div>
             </div>
-            <div className="flex gap-3">
-              <div className="flex-shrink-0 w-8 h-8 bg-primary text-white rounded-full flex items-center justify-center font-bold text-sm">
+            <div className="flex gap-4">
+              <div className="flex-shrink-0 w-10 h-10 bg-primary text-white rounded-full flex items-center justify-center font-bold">
                 4
               </div>
               <div>
-                <h3 className="font-bold text-foreground text-sm">Inizia a usare</h3>
-                <p className="text-xs text-muted-foreground">Goditi tutte le convenzioni</p>
+                <h3 className="font-bold text-foreground text-sm">Inizia a risparmiare</h3>
+                <p className="text-xs text-muted-foreground mt-1">Usa la tua carta presso i negozi partner per ottenere sconti esclusivi</p>
               </div>
             </div>
           </div>
         </section>
 
-        {/* FAQ */}
-        <section className="px-4 py-6">
-          <h2 className="text-lg font-bold text-foreground mb-4">Domande Frequenti</h2>
+        {/* Contact Section */}
+        <section className="px-4 py-6 bg-slate-50">
+          <h2 className="text-xl font-bold text-foreground mb-6 text-center">Contattaci</h2>
           
-          <div className="space-y-3">
-            <div className="bg-slate-50 p-3 rounded-lg">
-              <h3 className="font-bold text-sm mb-1">Quanto costa?</h3>
-              <p className="text-xs text-muted-foreground">3€ una volta sola</p>
+          <div className="space-y-4 mb-6">
+            {/* Email */}
+            <div className="flex items-center gap-4 bg-white p-4 rounded-2xl">
+              <div className="text-3xl">📧</div>
+              <div className="flex-1">
+                <p className="text-xs text-muted-foreground mb-1">Email</p>
+                <a 
+                  href="mailto:info@cartastudenti.it"
+                  className="text-primary font-semibold hover:underline text-sm"
+                >
+                  info@cartastudenti.it
+                </a>
+              </div>
             </div>
-            <div className="bg-slate-50 p-3 rounded-lg">
-              <h3 className="font-bold text-sm mb-1">Come pago?</h3>
-              <p className="text-xs text-muted-foreground">In contanti presso i nostri punti vendita</p>
+
+            {/* Telefono */}
+            <div className="flex items-center gap-4 bg-white p-4 rounded-2xl">
+              <div className="text-3xl">📱</div>
+              <div className="flex-1">
+                <p className="text-xs text-muted-foreground mb-1">Telefono</p>
+                <a 
+                  href="tel:+393001234567"
+                  className="text-primary font-semibold hover:underline text-sm"
+                >
+                  +39 300 123 4567
+                </a>
+              </div>
             </div>
-            <div className="bg-slate-50 p-3 rounded-lg">
-              <h3 className="font-bold text-sm mb-1">Quanto dura?</h3>
-              <p className="text-xs text-muted-foreground">Un anno accademico</p>
+
+            {/* Instagram */}
+            <div className="flex items-center gap-4 bg-white p-4 rounded-2xl">
+              <div className="text-3xl">📸</div>
+              <div className="flex-1">
+                <p className="text-xs text-muted-foreground mb-1">Instagram</p>
+                <a 
+                  href="https://instagram.com/cartastudenti"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-primary font-semibold hover:underline text-sm"
+                >
+                  @cartastudenti
+                </a>
+              </div>
             </div>
           </div>
-        </section>
 
-        {/* Contact */}
-        <section className="px-4 py-6 bg-slate-900 text-white">
-          <h2 className="text-lg font-bold mb-3">Hai domande?</h2>
-          <Link href="/contatti">
-            <Button size="lg" className="w-full bg-green-500 hover:bg-green-600 text-white py-5 text-base font-semibold">
-              Contattaci
-            </Button>
-          </Link>
+          {/* CTA Buttons */}
+          <div className="space-y-3">
+            <a href="mailto:info@cartastudenti.it">
+              <Button size="lg" className="w-full bg-primary hover:bg-primary/90 text-white py-6 text-base font-semibold">
+                Scrivi un'Email
+              </Button>
+            </a>
+            <a href="https://instagram.com/cartastudenti" target="_blank" rel="noopener noreferrer">
+              <Button size="lg" variant="outline" className="w-full py-6 text-base font-semibold">
+                Seguici su Instagram
+              </Button>
+            </a>
+          </div>
         </section>
       </main>
 

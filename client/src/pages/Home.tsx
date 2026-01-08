@@ -2,37 +2,8 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
-import { useState } from "react";
 
 export default function Home() {
-  const [newsletterEmail, setNewsletterEmail] = useState("");
-  const [loading, setLoading] = useState(false);
-
-  const handleNewsletterSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    setLoading(true);
-    
-    try {
-      const response = await fetch("/api/newsletter", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ email: newsletterEmail }),
-      });
-      
-      if (response.ok) {
-        alert("Grazie per l'iscrizione! Riceverai gli aggiornamenti sugli sconti.");
-        setNewsletterEmail("");
-      } else {
-        alert("Errore nell'iscrizione. Riprova più tardi.");
-      }
-    } catch (error) {
-      console.error("Error:", error);
-      alert("Errore nell'iscrizione. Riprova più tardi.");
-    } finally {
-      setLoading(false);
-    }
-  };
-
   const categories = [
     {
       title: "Abbigliamento",
@@ -77,25 +48,30 @@ export default function Home() {
 
       <main className="flex-1">
         {/* Logo, Descrizione e Acquista Section */}
-        <section className="py-4 px-4 flex items-start justify-between gap-4">
+        <section className="py-6 px-4 flex items-start justify-between gap-4">
           <div className="flex-1">
-            <div className="flex items-center gap-2 mb-2">
-              <img 
-                src="/logo-carta-studenti.png" 
-                alt="Carta Studenti" 
-                className="h-12 w-auto"
-              />
-              <h1 className="text-lg font-bold text-foreground">Carta Studenti</h1>
+            {/* Logo con riquadro multicolor dietro */}
+            <div className="mb-4">
+              <div className="bg-gradient-to-br from-primary via-secondary to-primary rounded-2xl p-4 w-fit">
+                <img 
+                  src="/logo-carta-studenti.png" 
+                  alt="Carta Studenti" 
+                  className="h-24 w-auto"
+                />
+              </div>
             </div>
-            <p className="text-xs text-muted-foreground leading-tight max-w-xs">
+            
+            {/* Titolo e descrizione */}
+            <h1 className="text-2xl font-bold text-foreground mb-2">Carta Studenti</h1>
+            <p className="text-sm text-muted-foreground leading-tight max-w-xs">
               Sconti esclusivi per studenti delle superiori e università a Potenza
             </p>
           </div>
           
-          {/* Acquista Button - Piccolo */}
-          <Link href="#contatti">
-            <div className="bg-gradient-to-br from-primary to-secondary rounded-lg p-3 text-white text-center min-w-fit">
-              <Button size="sm" className="w-full bg-white text-primary hover:bg-slate-100 py-1 px-3 text-xs font-semibold">
+          {/* Acquista Button */}
+          <Link href="/acquista">
+            <div className="bg-gradient-to-br from-primary to-secondary rounded-xl p-3 text-white text-center min-w-fit h-fit">
+              <Button size="sm" className="w-full bg-white text-primary hover:bg-slate-100 py-2 px-4 text-sm font-semibold">
                 Acquista
               </Button>
             </div>
@@ -103,19 +79,19 @@ export default function Home() {
         </section>
 
         {/* Categories Section */}
-        <section id="categorie" className="py-6 px-4">
-          <h2 className="text-2xl font-bold text-foreground mb-6 text-center">
+        <section id="categorie" className="py-8 px-4">
+          <h2 className="text-2xl font-bold text-foreground mb-8 text-center">
             Categorie
           </h2>
 
-          <div className="space-y-3">
+          <div className="space-y-6">
             {categories.map((category, index) => {
               const isEven = index % 2 === 0;
               return (
                 <Link key={category.href} href={category.href}>
-                  <div className="flex rounded-xl overflow-hidden shadow-lg active:scale-95 transition-transform h-24">
+                  <div className="flex rounded-2xl overflow-hidden shadow-lg active:scale-95 transition-transform h-24">
                     {/* Parte con colore (nome + icona) */}
-                    <div className={`${category.color} text-white flex items-center justify-center gap-3 flex-1 px-4 ${isEven ? 'rounded-l-xl' : 'rounded-r-xl order-2'}`}>
+                    <div className={`${category.color} text-white flex items-center justify-center gap-3 flex-1 px-4 ${isEven ? 'rounded-l-2xl' : 'rounded-r-2xl order-2'}`}>
                       <div className="text-3xl">{category.icon}</div>
                       <div className={isEven ? 'text-left' : 'text-right'}>
                         <h3 className="text-lg font-bold leading-tight">{category.title}</h3>
@@ -123,7 +99,7 @@ export default function Home() {
                     </div>
 
                     {/* Parte senza colore (descrizione) */}
-                    <div className={`bg-white flex items-center px-4 flex-1 ${isEven ? 'rounded-r-xl' : 'rounded-l-xl order-1'}`}>
+                    <div className={`bg-white flex items-center px-4 flex-1 ${isEven ? 'rounded-r-2xl' : 'rounded-l-2xl order-1'}`}>
                       <p className={`text-sm text-foreground font-medium ${isEven ? 'text-left' : 'text-right'}`}>
                         {category.description}
                       </p>
@@ -133,48 +109,6 @@ export default function Home() {
               );
             })}
           </div>
-        </section>
-
-        {/* Newsletter Section */}
-        <section className="py-6 px-4">
-          <h2 className="text-xl font-bold text-foreground mb-3 text-center">
-            Resta Aggiornato
-          </h2>
-          <p className="text-center text-muted-foreground text-xs mb-4">
-            Ricevi notifiche sui nuovi sconti
-          </p>
-          <form onSubmit={handleNewsletterSubmit} className="flex flex-col gap-2">
-            <input
-              type="email"
-              required
-              value={newsletterEmail}
-              onChange={(e) => setNewsletterEmail(e.target.value)}
-              placeholder="Il tuo email"
-              className="w-full px-4 py-3 rounded-lg border border-border focus:outline-none focus:ring-2 focus:ring-primary text-sm"
-            />
-            <Button 
-              type="submit" 
-              disabled={loading}
-              className="w-full bg-primary hover:bg-primary/90 text-white py-3 text-base font-semibold"
-            >
-              {loading ? "Iscrizione in corso..." : "Iscriviti"}
-            </Button>
-          </form>
-        </section>
-
-        {/* Contact Section */}
-        <section id="contatti" className="py-6 px-4 bg-slate-900 text-white">
-          <h2 className="text-xl font-bold mb-2 text-center">
-            Hai Domande?
-          </h2>
-          <p className="text-center text-xs opacity-90 mb-4">
-            Contattaci per qualsiasi informazione
-          </p>
-          <Link href="/contatti">
-            <Button size="lg" className="w-full bg-green-500 hover:bg-green-600 text-white py-5 text-base font-semibold">
-              Contattaci
-            </Button>
-          </Link>
         </section>
       </main>
 

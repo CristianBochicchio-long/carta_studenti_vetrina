@@ -34,3 +34,15 @@
 - [ ] In attesa: immagini aziende
 - [ ] In attesa: nomi aziende
 - [ ] In attesa: assegnazione aziende alle categorie
+
+## Aggiornamenti Richiesti
+- [x] Ingrandire logo sulla homepage
+- [x] Aggiungere riquadro multicolor dietro "Carta Studenti"
+- [x] Aumentare distanza tra categorie
+- [x] Rimuovere sezione newsletter dalla homepage
+- [x] Rimuovere sezione contatti dalla homepage
+- [x] Creare pagina acquista con istruzioni
+- [x] Aggiungere link email nella pagina acquista
+- [x] Aggiungere link Instagram nella pagina acquista
+- [x] Aggiungere link telefono nella pagina acquista
+- [x] Applicare angoli arrotondati a tutti i riquadri
