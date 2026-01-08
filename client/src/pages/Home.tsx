@@ -76,13 +76,21 @@ export default function Home() {
       <Header />
 
       <main className="flex-1">
-        {/* Logo Section */}
-        <section className="py-6 px-4 text-center">
-          <img 
-            src="/logo-carta-studenti.png" 
-            alt="Carta Studenti" 
-            className="h-20 w-auto mx-auto mb-3"
-          />
+        {/* Logo and Acquista Section */}
+        <section className="py-4 px-4 flex items-center justify-between gap-3">
+          <div className="flex items-center gap-3 flex-1">
+            <img 
+              src="/logo-carta-studenti.png" 
+              alt="Carta Studenti" 
+              className="h-12 w-auto"
+            />
+            <h1 className="text-lg font-bold text-foreground">Carta Studenti</h1>
+          </div>
+          <Link href="#contatti">
+            <Button className="bg-green-500 hover:bg-green-600 text-white px-6 py-2 text-sm font-semibold rounded-lg">
+              Acquista
+            </Button>
+          </Link>
         </section>
 
         {/* Price Section */}
