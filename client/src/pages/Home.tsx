@@ -88,7 +88,7 @@ export default function Home() {
             Categorie
           </h2>
 
-          <div className="space-y-16">
+          <div className="space-y-20">
             {categories.map((category, index) => {
               const isEven = index % 2 === 0;
               return (
