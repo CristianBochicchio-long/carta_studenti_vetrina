@@ -8,6 +8,7 @@ import Home from "./pages/Home";
 import CategoryPage from "./pages/CategoryPage";
 import AcquistaPage from "./pages/AcquistaPage";
 import ContattiPage from "./pages/ContattiPage";
+import PrivacyPage from "./pages/PrivacyPage";
 
 function Router() {
   return (
@@ -15,6 +16,7 @@ function Router() {
       <Route path={"/"} component={Home} />
       <Route path={"/acquista"} component={AcquistaPage} />
       <Route path={"/contatti"} component={ContattiPage} />
+      <Route path={"/privacy"} component={PrivacyPage} />
       <Route path={"/:category"} component={CategoryPage} />
       <Route path={"/404"} component={NotFound} />
       {/* Final fallback route */}
