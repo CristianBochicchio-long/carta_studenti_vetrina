@@ -76,6 +76,31 @@ export default function Home() {
       <Header />
 
       <main className="flex-1">
+        {/* Logo Section */}
+        <section className="py-6 px-4 text-center">
+          <img 
+            src="/logo-carta-studenti.png" 
+            alt="Carta Studenti" 
+            className="h-20 w-auto mx-auto mb-3"
+          />
+        </section>
+
+        {/* Price Section */}
+        <section className="py-6 px-4 bg-slate-50">
+          <div className="bg-gradient-to-br from-primary to-secondary rounded-xl p-6 text-center text-white">
+            <h2 className="text-xl font-bold mb-3">Prezzo della Carta</h2>
+            <div className="text-4xl font-bold mb-3">3€</div>
+            <p className="text-xs mb-4 opacity-90">
+              Una volta sola per accedere a tutte le convenzioni
+            </p>
+            <Link href="#contatti">
+              <Button size="lg" className="w-full bg-white text-primary hover:bg-slate-100 py-5 text-base font-semibold">
+                Acquista Ora
+              </Button>
+            </Link>
+          </div>
+        </section>
+
         {/* Categories Section */}
         <section id="categorie" className="py-6 px-4">
           <h2 className="text-2xl font-bold text-foreground mb-6 text-center">
@@ -106,22 +131,6 @@ export default function Home() {
                 </Link>
               );
             })}
-          </div>
-        </section>
-
-        {/* Price Section */}
-        <section className="py-6 px-4 bg-slate-50">
-          <div className="bg-gradient-to-br from-primary to-secondary rounded-xl p-6 text-center text-white">
-            <h2 className="text-xl font-bold mb-3">Prezzo della Carta</h2>
-            <div className="text-4xl font-bold mb-3">3€</div>
-            <p className="text-xs mb-4 opacity-90">
-              Una volta sola per accedere a tutte le convenzioni
-            </p>
-            <Link href="#contatti">
-              <Button size="lg" className="w-full bg-white text-primary hover:bg-slate-100 py-5 text-base font-semibold">
-                Acquista Ora
-              </Button>
-            </Link>
           </div>
         </section>
 

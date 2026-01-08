@@ -17,17 +17,7 @@ export default function Header() {
           </div>
         </Link>
 
-        {/* Navigation - Destra */}
-        <div className="flex items-center gap-2">
-          <Link href="#contatti">
-            <Button variant="ghost" size="sm" className="text-xs">Contatti</Button>
-          </Link>
-          <Link href="#contatti">
-            <Button className="bg-green-500 hover:bg-green-600 text-white text-xs py-2 px-3">
-              Acquista
-            </Button>
-          </Link>
-        </div>
+
       </div>
     </header>
   );
