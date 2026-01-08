@@ -76,7 +76,7 @@ export default function Home() {
       <Header />
 
       <main className="flex-1">
-        {/* Logo and Acquista Section */}
+        {/* Logo, Titolo e Prezzo Section */}
         <section className="py-4 px-4 flex items-center justify-between gap-3">
           <div className="flex items-center gap-3 flex-1">
             <img 
@@ -86,27 +86,16 @@ export default function Home() {
             />
             <h1 className="text-lg font-bold text-foreground">Carta Studenti</h1>
           </div>
+          
+          {/* Price Box - Piccolo */}
           <Link href="#contatti">
-            <Button className="bg-green-500 hover:bg-green-600 text-white px-6 py-2 text-sm font-semibold rounded-lg">
-              Acquista
-            </Button>
-          </Link>
-        </section>
-
-        {/* Price Section */}
-        <section className="py-6 px-4 bg-slate-50">
-          <div className="bg-gradient-to-br from-primary to-secondary rounded-xl p-6 text-center text-white">
-            <h2 className="text-xl font-bold mb-3">Prezzo della Carta</h2>
-            <div className="text-4xl font-bold mb-3">3€</div>
-            <p className="text-xs mb-4 opacity-90">
-              Una volta sola per accedere a tutte le convenzioni
-            </p>
-            <Link href="#contatti">
-              <Button size="lg" className="w-full bg-white text-primary hover:bg-slate-100 py-5 text-base font-semibold">
-                Acquista Ora
+            <div className="bg-gradient-to-br from-primary to-secondary rounded-lg p-3 text-white text-center min-w-fit">
+              <div className="text-xs font-bold">3€</div>
+              <Button size="sm" className="w-full bg-white text-primary hover:bg-slate-100 py-1 px-3 text-xs font-semibold mt-1">
+                Acquista
               </Button>
-            </Link>
-          </div>
+            </div>
+          </Link>
         </section>
 
         {/* Categories Section */}
