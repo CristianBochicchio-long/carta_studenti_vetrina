@@ -79,11 +79,14 @@ export default function Home() {
         {/* Logo, Descrizione e Acquista Section */}
         <section className="py-4 px-4 flex items-start justify-between gap-4">
           <div className="flex-1">
-            <img 
-              src="/logo-carta-studenti.png" 
-              alt="Carta Studenti" 
-              className="h-12 w-auto mb-2"
-            />
+            <div className="flex items-center gap-2 mb-2">
+              <img 
+                src="/logo-carta-studenti.png" 
+                alt="Carta Studenti" 
+                className="h-12 w-auto"
+              />
+              <h1 className="text-lg font-bold text-foreground">Carta Studenti</h1>
+            </div>
             <p className="text-xs text-muted-foreground leading-tight max-w-xs">
               Sconti esclusivi per studenti delle superiori e università a Potenza
             </p>
