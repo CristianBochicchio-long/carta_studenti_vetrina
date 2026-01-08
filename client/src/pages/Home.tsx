@@ -55,7 +55,7 @@ export default function Home() {
               <img 
                 src="/logo-carta-studenti.png" 
                 alt="Carta Studenti" 
-                className="h-24 w-auto"
+                className="h-40 w-auto"
               />
             </div>
             
