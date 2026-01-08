@@ -85,7 +85,7 @@ export default function Home() {
               className="h-12 w-auto mb-2"
             />
             <p className="text-xs text-muted-foreground leading-tight max-w-xs">
-              Sconti esclusivi fino al 30% nei migliori negozi della tua città
+              Sconti esclusivi per studenti delle superiori e università a Potenza
             </p>
           </div>
           
