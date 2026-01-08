@@ -88,20 +88,28 @@ export default function Home() {
             Categorie
           </h2>
 
-          <div className="space-y-8 max-w-2xl mx-auto">
-            {categories.map((category) => (
-              <Link key={category.href} href={category.href}>
-                <div className={`${category.color} text-white rounded-2xl p-6 shadow-lg active:scale-95 transition-transform flex items-center justify-between`}>
-                  <div className="flex items-center gap-4">
-                    <div className="text-4xl">{category.icon}</div>
-                    <div>
+          <div className="grid grid-cols-1 gap-y-12">
+            {categories.map((category, index) => {
+              const isEven = index % 2 === 0;
+              return (
+                <div key={category.href} className={`flex gap-4 ${!isEven ? 'flex-row-reverse' : ''}`}>
+                  {/* Parte con colore (nome + icona) */}
+                  <Link href={category.href} className="flex-1">
+                    <div className={`${category.color} text-white rounded-2xl p-6 shadow-lg active:scale-95 transition-transform flex items-center justify-center gap-4 h-full`}>
+                      <div className="text-4xl">{category.icon}</div>
                       <h3 className="text-xl font-bold">{category.title}</h3>
-                      <p className="text-sm opacity-90">{category.description}</p>
                     </div>
+                  </Link>
+
+                  {/* Parte senza colore (descrizione) */}
+                  <div className="flex-1 flex items-center px-4">
+                    <p className="text-sm text-foreground font-medium">
+                      {category.description}
+                    </p>
                   </div>
                 </div>
-              </Link>
-            ))}
+              );
+            })}
           </div>
         </section>
       </main>
