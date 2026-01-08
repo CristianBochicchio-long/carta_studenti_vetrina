@@ -62,7 +62,7 @@ export default function Home() {
             {/* Titolo con riquadro multicolor dietro */}
             <div className="mb-2 w-fit">
               <div className="bg-gradient-to-br from-primary via-secondary to-primary rounded-2xl px-4 py-2 inline-block">
-                <h1 className="text-2xl font-bold text-foreground">Carta Studenti</h1>
+                <h1 className="text-2xl font-bold text-white">Carta Studenti</h1>
               </div>
             </div>
             
