@@ -8,16 +8,17 @@ export default function Header() {
 
   return (
     <header className="sticky top-0 z-50 bg-white shadow-lg">
-      <div className="px-4 py-3 flex items-center justify-between">
-        {/* Logo */}
-        <Link href="/" className="flex items-center gap-2">
+      <div className="px-4 py-4 flex items-center justify-between">
+        {/* Logo - Grande e Visibile */}
+        <Link href="/" className="flex items-center gap-3 flex-1">
           <img 
             src="/logo-carta-studenti.png" 
             alt="Carta Studenti" 
-            className="h-10 w-auto"
+            className="h-16 w-auto"
           />
           <div className="hidden xs:block">
-            <h1 className="text-sm font-bold text-primary">Carta Studenti</h1>
+            <h1 className="text-lg font-bold text-primary">Carta Studenti</h1>
+            <p className="text-xs text-muted-foreground">Convenzioni Esclusive</p>
           </div>
         </Link>
 
@@ -35,7 +36,7 @@ export default function Header() {
             <Button variant="ghost">Contatti</Button>
           </Link>
           <Link href="/acquista">
-            <Button className="bg-secondary hover:bg-secondary/90 text-white">
+            <Button className="bg-green-500 hover:bg-green-600 text-white">
               Acquista
             </Button>
           </Link>
@@ -52,7 +53,7 @@ export default function Header() {
               </Button>
             </Link>
             <Link href="/acquista" onClick={() => setMenuOpen(false)}>
-              <Button className="w-full bg-secondary hover:bg-secondary/90 text-white">
+              <Button className="w-full bg-green-500 hover:bg-green-600 text-white">
                 Acquista - 3€
               </Button>
             </Link>
