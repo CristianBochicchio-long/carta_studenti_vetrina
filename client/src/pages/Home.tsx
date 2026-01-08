@@ -88,14 +88,14 @@ export default function Home() {
             Categorie
           </h2>
 
-          <div className="space-y-10">
+          <div className="space-y-16">
             {categories.map((category, index) => {
               const isEven = index % 2 === 0;
               return (
                 <Link key={category.href} href={category.href}>
                   <div className="flex rounded-2xl overflow-hidden shadow-lg active:scale-95 transition-transform h-24">
                     {/* Parte con colore (nome + icona) */}
-                    <div className={`${category.color} text-white flex items-center justify-center gap-3 flex-1 px-4 ${isEven ? 'rounded-l-2xl' : 'rounded-r-2xl order-2'}`}>
+                    <div className={`${category.color} text-white flex items-center justify-center gap-3 flex-1 px-6 py-4 ${isEven ? 'rounded-l-2xl' : 'rounded-r-2xl order-2'}`}>
                       <div className="text-3xl">{category.icon}</div>
                       <div className={isEven ? 'text-left' : 'text-right'}>
                         <h3 className="text-lg font-bold leading-tight">{category.title}</h3>
@@ -103,7 +103,7 @@ export default function Home() {
                     </div>
 
                     {/* Parte senza colore (descrizione) */}
-                    <div className={`bg-white flex items-center px-4 flex-1 ${isEven ? 'rounded-r-2xl' : 'rounded-l-2xl order-1'}`}>
+                    <div className={`bg-white flex items-center px-6 py-4 flex-1 ${isEven ? 'rounded-r-2xl' : 'rounded-l-2xl order-1'}`}>
                       <p className={`text-sm text-foreground font-medium ${isEven ? 'text-left' : 'text-right'}`}>
                         {category.description}
                       </p>
