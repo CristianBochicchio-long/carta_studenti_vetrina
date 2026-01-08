@@ -76,24 +76,26 @@ export default function Home() {
       <Header />
 
       <main className="flex-1">
-        {/* Logo, Titolo e Prezzo Section */}
-        <section className="py-4 px-4 flex items-center justify-between gap-3">
-          <div className="flex items-center gap-3 flex-1">
+        {/* Logo, Descrizione e Acquista Section */}
+        <section className="py-4 px-4 flex items-start justify-between gap-4">
+          <div className="flex-1">
             <img 
               src="/logo-carta-studenti.png" 
               alt="Carta Studenti" 
-              className="h-12 w-auto"
+              className="h-12 w-auto mb-2"
             />
-            <h1 className="text-lg font-bold text-foreground">Carta Studenti</h1>
+            <p className="text-xs text-muted-foreground leading-tight max-w-xs">
+              Sconti esclusivi fino al 30% nei migliori negozi della tua città
+            </p>
           </div>
           
           {/* Price Box - Piccolo */}
           <Link href="#contatti">
             <div className="bg-gradient-to-br from-primary to-secondary rounded-lg p-3 text-white text-center min-w-fit">
-              <div className="text-xs font-bold">3€</div>
-              <Button size="sm" className="w-full bg-white text-primary hover:bg-slate-100 py-1 px-3 text-xs font-semibold mt-1">
+              <Button size="sm" className="w-full bg-white text-primary hover:bg-slate-100 py-1 px-3 text-xs font-semibold">
                 Acquista
               </Button>
+              <div className="text-xs font-semibold mt-1">3€</div>
             </div>
           </Link>
         </section>
