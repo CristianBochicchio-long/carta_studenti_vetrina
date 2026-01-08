@@ -47,40 +47,6 @@ export default function Home() {
       <Header />
 
       <main className="flex-1">
-        {/* Hero Section */}
-        <section className="relative py-6 px-4 bg-gradient-to-r from-primary/10 via-secondary/10 to-primary/10">
-          <div className="text-center">
-            <h1 className="text-3xl font-bold text-foreground mb-2">
-              Carta Studenti
-            </h1>
-            <p className="text-sm text-muted-foreground mb-4">
-              Scopri le migliori convenzioni esclusive
-            </p>
-            <div className="flex flex-col gap-2 mb-4">
-              <div className="bg-white px-3 py-1 rounded-lg shadow-md inline-block mx-auto">
-                <p className="text-xs font-semibold text-primary">50+ Negozi Partner</p>
-              </div>
-              <div className="bg-white px-3 py-1 rounded-lg shadow-md inline-block mx-auto">
-                <p className="text-xs font-semibold text-primary">Sconti fino al 30%</p>
-              </div>
-            </div>
-
-            {/* CTA Buttons */}
-            <div className="flex flex-col gap-2">
-              <Link href="/acquista">
-                <Button size="lg" className="w-full bg-green-500 hover:bg-green-600 text-white py-5 text-base font-semibold">
-                  Acquista Carta - 3€
-                </Button>
-              </Link>
-              <Link href="#categorie">
-                <Button size="lg" variant="outline" className="w-full py-5 text-base font-semibold">
-                  Scopri Convenzioni
-                </Button>
-              </Link>
-            </div>
-          </div>
-        </section>
-
         {/* Categories Section */}
         <section id="categorie" className="py-6 px-4">
           <h2 className="text-2xl font-bold text-foreground mb-6 text-center">
@@ -122,7 +88,7 @@ export default function Home() {
             <p className="text-xs mb-4 opacity-90">
               Una volta sola per accedere a tutte le convenzioni
             </p>
-            <Link href="/acquista">
+            <Link href="#contatti">
               <Button size="lg" className="w-full bg-white text-primary hover:bg-slate-100 py-5 text-base font-semibold">
                 Acquista Ora
               </Button>
