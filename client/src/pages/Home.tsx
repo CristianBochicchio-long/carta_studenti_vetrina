@@ -84,7 +84,7 @@ export default function Home() {
 
         {/* Categories Section */}
         <section id="categorie" className="py-8 px-4">
-          <h2 className="text-2xl font-bold text-foreground mb-8 text-center">
+          <h2 className="text-2xl font-bold text-foreground mb-12 text-center">
             Categorie
           </h2>
 
