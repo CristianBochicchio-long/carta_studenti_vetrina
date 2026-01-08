@@ -14,7 +14,7 @@ export default function Header() {
           <img 
             src="/logo-carta-studenti.png" 
             alt="Carta Studenti" 
-            className="h-16 w-auto"
+            className="h-20 w-auto"
           />
           <div className="hidden xs:block">
             <h1 className="text-lg font-bold text-primary">Carta Studenti</h1>
