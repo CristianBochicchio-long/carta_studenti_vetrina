@@ -40,6 +40,20 @@ export default function Home() {
       href: "/varie",
       color: "bg-gradient-to-br from-purple-500 to-purple-600",
     },
+    {
+      title: "B&B",
+      description: "Alloggi e strutture ricettive",
+      icon: "🏨",
+      href: "/bb",
+      color: "bg-gradient-to-br from-amber-500 to-amber-600",
+    },
+    {
+      title: "Scuola Guida",
+      description: "Corsi di guida e patente",
+      icon: "🚗",
+      href: "/scuola-guida",
+      color: "bg-gradient-to-br from-cyan-500 to-cyan-600",
+    },
   ];
 
   return (
