@@ -54,6 +54,13 @@ export default function Home() {
       href: "/scuola-guida",
       color: "bg-gradient-to-br from-cyan-500 to-cyan-600",
     },
+    {
+      title: "E-commerce",
+      description: "Negozi online e marketplace",
+      icon: "🛒",
+      href: "/ecommerce",
+      color: "bg-gradient-to-br from-indigo-500 to-indigo-600",
+    },
   ];
 
   return (
