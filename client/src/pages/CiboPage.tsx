@@ -10,7 +10,7 @@ export default function CiboPage() {
       name: "Pasticceria Mancino",
       discount: "10%",
       logo: "/loghi/mancino.jpg",
-      coordinates: { lat: 40.6398, lng: 15.8044 }, // Via Tirreno 29, Potenza
+      coordinates: { lat: 40.6360, lng: 15.8015 }, // Via Tirreno 29, Potenza
     },
   ];
 

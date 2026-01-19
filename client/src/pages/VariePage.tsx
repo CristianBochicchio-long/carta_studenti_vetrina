@@ -10,7 +10,7 @@ export default function VariePage() {
       name: "Svapomania",
       discount: "5%",
       logo: "/loghi/svapomania.jpg",
-      coordinates: { lat: 40.6382, lng: 15.8042 }, // Via di Giura 7, Potenza
+      coordinates: { lat: 40.6382, lng: 15.8042 }, // Via di Giura 7, Potenza - CORRETTE
     },
   ];
 

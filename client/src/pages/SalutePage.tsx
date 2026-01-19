@@ -10,7 +10,7 @@ export default function SalutePage() {
       name: "Irene Beauty Specialist",
       discount: "10%",
       logo: "/loghi/irene.png",
-      coordinates: { lat: 40.6392, lng: 15.8038 }, // Via Aldo Moro 69, Potenza
+      coordinates: { lat: 40.6398, lng: 15.8028 }, // Via Aldo Moro 69, Potenza - CORRETTE
     },
   ];
 
