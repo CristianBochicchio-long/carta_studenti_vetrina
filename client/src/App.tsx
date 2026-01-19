@@ -9,6 +9,7 @@ import CategoryPage from "./pages/CategoryPage";
 import AcquistaPage from "./pages/AcquistaPage";
 import ContattiPage from "./pages/ContattiPage";
 import PrivacyPage from "./pages/PrivacyPage";
+import AbbigliamentoPage from "./pages/AbbigliamentoPage";
 
 function Router() {
   return (
@@ -17,6 +18,7 @@ function Router() {
       <Route path={"/acquista"} component={AcquistaPage} />
       <Route path={"/contatti"} component={ContattiPage} />
       <Route path={"/privacy"} component={PrivacyPage} />
+      <Route path={"/abbigliamento"} component={AbbigliamentoPage} />
       <Route path={"/:category"} component={CategoryPage} />
       <Route path={"/404"} component={NotFound} />
       {/* Final fallback route */}
