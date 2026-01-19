@@ -9,7 +9,7 @@ export default function AbbigliamentoPage() {
       id: 1,
       name: "Vanity",
       discount: "10%",
-      logo: "/vanity-logo.png",
+      logo: "/loghi/vanity.png",
       coordinates: { lat: 40.640362, lng: 15.8044015 }, // Via Giuseppe Mazzini 96, Potenza
     },
   ];
