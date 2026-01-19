@@ -13,6 +13,7 @@ import AbbigliamentoPage from "./pages/AbbigliamentoPage";
 import CiboPage from "./pages/CiboPage";
 import SalutePage from "./pages/SalutePage";
 import VariePage from "./pages/VariePage";
+import SportPage from "./pages/SportPage";
 
 function Router() {
   return (
@@ -25,6 +26,7 @@ function Router() {
       <Route path={"/cibo"} component={CiboPage} />
       <Route path={"/salute"} component={SalutePage} />
       <Route path={"/varie"} component={VariePage} />
+      <Route path={"/sport"} component={SportPage} />
       <Route path={"/:category"} component={CategoryPage} />
       <Route path={"/404"} component={NotFound} />
       {/* Final fallback route */}
