@@ -12,6 +12,13 @@ export default function VariePage() {
       logo: "/loghi/svapomania.jpg",
       coordinates: { lat: 40.6498381, lng: 15.7958133 }, // Via Domenico di Giura 17-19, Potenza
     },
+    {
+      id: 2,
+      name: "Gioielleria Princess",
+      discount: "10%",
+      logo: "/loghi/princess.png",
+      coordinates: { lat: 40.6393762, lng: 15.7824425 }, // Via del Gallitello 237, Potenza
+    },
   ];
 
   return (
