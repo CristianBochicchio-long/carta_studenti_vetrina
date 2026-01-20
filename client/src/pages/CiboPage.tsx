@@ -12,6 +12,13 @@ export default function CiboPage() {
       logo: "/loghi/mancino.jpg",
       coordinates: { lat: 40.6325441, lng: 15.7916009 }, // Via Tirreno 29, Potenza
     },
+    {
+      id: 2,
+      name: "Number One Community Bar",
+      discount: "15%",
+      logo: "/loghi/numberone.jpg",
+      coordinates: { lat: 40.6397, lng: 15.8063 }, // Via Pretoria, Potenza
+    },
   ];
 
   return (
