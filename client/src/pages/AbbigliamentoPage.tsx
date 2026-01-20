@@ -17,7 +17,7 @@ export default function AbbigliamentoPage() {
       name: "Life Style",
       discount: "10%",
       logo: "/loghi/lifestyle.png",
-      coordinates: { lat: 40.6395, lng: 15.8065 }, // Via Pretoria 212, Potenza
+      coordinates: { lat: 40.6387142, lng: 15.8046618 }, // Via Pretoria 212, Potenza
       website: "https://lifestyleshop.it",
     },
   ];
