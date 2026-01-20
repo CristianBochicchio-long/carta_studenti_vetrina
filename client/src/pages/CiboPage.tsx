@@ -17,7 +17,7 @@ export default function CiboPage() {
       name: "Number One Community Bar",
       discount: "15%",
       logo: "/loghi/numberone.jpg",
-      coordinates: { lat: 40.6397, lng: 15.8063 }, // Via Pretoria, Potenza
+      coordinates: { lat: 40.6388513, lng: 15.8058681 }, // Via Pretoria, Potenza
     },
   ];
 
