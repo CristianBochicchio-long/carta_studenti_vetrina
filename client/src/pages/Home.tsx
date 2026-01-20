@@ -91,6 +91,11 @@ export default function Home() {
             <p className="text-sm text-muted-foreground leading-tight max-w-xs">
               Sconti esclusivi per studenti delle superiori e università a Potenza
             </p>
+            
+            {/* Prezzo */}
+            <p className="text-lg font-bold text-primary mt-2">
+              Prezzo: 3,5€
+            </p>
           </div>
           
           {/* Acquista Button */}
