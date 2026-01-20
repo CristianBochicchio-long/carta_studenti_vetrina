@@ -20,6 +20,13 @@ export default function AbbigliamentoPage() {
       coordinates: { lat: 40.6387142, lng: 15.8046618 }, // Via Pretoria 212, Potenza
       website: "https://lifestyleshop.it",
     },
+    {
+      id: 3,
+      name: "Mina",
+      discount: "10%",
+      logo: "/loghi/mina.png",
+      coordinates: { lat: 40.6378, lng: 15.8058 }, // V.le Guglielmo Marconi 96, Potenza
+    },
   ];
 
   return (
