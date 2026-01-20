@@ -40,7 +40,7 @@ export default function AcquistaPage() {
         {/* Price Card */}
         <section className="px-4 py-6">
           <div className="bg-gradient-to-br from-primary to-secondary rounded-2xl p-8 text-center text-white mb-6">
-            <div className="text-5xl font-bold mb-2">3€</div>
+            <div className="text-5xl font-bold mb-2">3,5€</div>
             <p className="text-sm opacity-90">Pagamento in contanti</p>
           </div>
         </section>
@@ -74,7 +74,7 @@ export default function AcquistaPage() {
               </div>
               <div>
                 <h3 className="font-bold text-foreground text-sm">Paga in contanti</h3>
-                <p className="text-xs text-muted-foreground mt-1">Paga 3€ al momento del ritiro</p>
+                <p className="text-xs text-muted-foreground mt-1">Paga 3,5€ al momento del ritiro</p>
               </div>
             </div>
             <div className="flex gap-4">
