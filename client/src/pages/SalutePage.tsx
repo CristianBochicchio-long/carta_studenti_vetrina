@@ -17,7 +17,7 @@ export default function SalutePage() {
       name: "Make Difference",
       discount: "Offerte Speciali",
       logo: "/loghi/make_difference.jpg?v=1",
-      coordinates: { lat: 40.6382, lng: 15.8062 }, // Via Isca del Pioppo, Iper Futura, Potenza
+      coordinates: { lat: 40.637942, lng: 15.781883 }, // JQQJ+5QC, Via Isca del Pioppo, Iper Futura, Potenza
       offers: [
         {
           title: "Colore + piega 'Study Break'",
