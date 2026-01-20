@@ -12,6 +12,14 @@ export default function AbbigliamentoPage() {
       logo: "/loghi/vanity.png",
       coordinates: { lat: 40.640362, lng: 15.8044015 }, // Via Giuseppe Mazzini 96, Potenza
     },
+    {
+      id: 2,
+      name: "Life Style",
+      discount: "10%",
+      logo: "/loghi/lifestyle.png",
+      coordinates: { lat: 40.6395, lng: 15.8065 }, // Via Pretoria 212, Potenza
+      website: "https://lifestyleshop.it",
+    },
   ];
 
   return (
@@ -49,6 +57,18 @@ export default function AbbigliamentoPage() {
                   <div className="bg-pink-500 text-white rounded-xl px-6 py-3 text-center font-bold text-2xl">
                     Sconto {store.discount}
                   </div>
+                  
+                  {/* Website Link */}
+                  {store.website && (
+                    <a 
+                      href={store.website} 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="mt-4 text-primary font-semibold hover:underline"
+                    >
+                      Visita il sito →
+                    </a>
+                  )}
                 </div>
 
                 {/* Right: Map */}
