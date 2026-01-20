@@ -12,6 +12,27 @@ export default function SalutePage() {
       logo: "/loghi/irene.png",
       coordinates: { lat: 40.5751716, lng: 15.7815401 }, // Via Aldo Moro 69, Pignola
     },
+    {
+      id: 2,
+      name: "Make Difference",
+      discount: "Offerte Speciali",
+      logo: "/loghi/make_difference.jpg?v=1",
+      coordinates: { lat: 40.6382, lng: 15.8062 }, // Via Isca del Pioppo, Iper Futura, Potenza
+      offers: [
+        {
+          title: "Colore + piega 'Study Break'",
+          description: "Colore + piega con trattamento omaggio"
+        },
+        {
+          title: "Taglio smart student",
+          description: "Taglio + piega a prezzo fisso 29 euro"
+        },
+        {
+          title: "Porta un'amica",
+          description: "Se vengono in 2 la piega è scontata del 10%"
+        }
+      ]
+    },
   ];
 
   return (
@@ -47,8 +68,20 @@ export default function SalutePage() {
                   
                   {/* Discount Badge */}
                   <div className="bg-pink-500 text-white rounded-xl px-6 py-3 text-center font-bold text-2xl">
-                    Sconto {store.discount}
+                    {store.discount}
                   </div>
+                  
+                  {/* Offers List for Make Difference */}
+                  {store.offers && (
+                    <div className="mt-6 w-full space-y-3">
+                      {store.offers.map((offer, idx) => (
+                        <div key={idx} className="bg-blue-50 border border-blue-200 rounded-lg p-3">
+                          <h4 className="font-bold text-blue-900 text-sm">{offer.title}</h4>
+                          <p className="text-blue-700 text-xs mt-1">{offer.description}</p>
+                        </div>
+                      ))}
+                    </div>
+                  )}
                 </div>
 
                 {/* Right: Map */}
