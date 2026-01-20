@@ -19,6 +19,13 @@ export default function CiboPage() {
       logo: "/loghi/numberone.jpg",
       coordinates: { lat: 40.6388513, lng: 15.8058681 }, // Via Pretoria, Potenza
     },
+    {
+      id: 3,
+      name: "Caffetteria Don Bosco",
+      discount: "10%",
+      logo: "/loghi/don_bosco.jpg",
+      coordinates: { lat: 40.6469793, lng: 15.7967429 }, // Piazza S. Giovanni Bosco 26, Potenza
+    },
   ];
 
   return (
