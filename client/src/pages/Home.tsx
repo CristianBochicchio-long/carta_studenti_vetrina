@@ -95,7 +95,7 @@ export default function Home() {
           
           {/* Acquista Button */}
           <Link href="/acquista">
-            <div className="bg-gradient-to-br from-primary to-secondary rounded-xl p-3 text-white text-center min-w-fit h-fit">
+            <div className="bg-gradient-to-br from-primary to-secondary rounded-xl p-3 text-white text-center min-w-fit h-fit shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-1">
               <Button size="sm" className="w-full bg-white text-primary hover:bg-slate-100 py-2 px-4 text-sm font-semibold">
                 Acquista
               </Button>
@@ -116,7 +116,7 @@ export default function Home() {
                 <div key={category.href} className={`flex gap-4 ${!isEven ? 'flex-row-reverse' : ''}`}>
                   {/* Parte con colore (nome + icona) */}
                   <Link href={category.href} className="flex-1">
-                    <div className={`${category.color} text-white rounded-2xl p-6 shadow-lg active:scale-95 transition-transform flex items-center justify-center gap-4 h-full`}>
+                    <div className={`${category.color} text-white rounded-2xl p-6 shadow-lg hover:shadow-2xl active:scale-95 transition-all duration-300 hover:-translate-y-1 flex items-center justify-center gap-4 h-full`}>
                       <div className="text-4xl">{category.icon}</div>
                       <h3 className="text-xl font-bold">{category.title}</h3>
                     </div>
