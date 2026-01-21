@@ -19,6 +19,14 @@ export default function VariePage() {
       logo: "/loghi/princess.png",
       coordinates: { lat: 40.6393762, lng: 15.7824425 }, // Via del Gallitello 237, Potenza
     },
+    {
+      id: 3,
+      name: "Riviello Gioielli dal 1951",
+      discount: "10% + svariate promozioni",
+      logo: "/loghi/riviello.png",
+      coordinates: { lat: 40.6383504, lng: 15.8028 }, // Via Pretoria 105, Potenza
+      website: "https://riviellogioielli.it",
+    },
   ];
 
   return (
@@ -56,6 +64,18 @@ export default function VariePage() {
                   <div className="bg-pink-500 text-white rounded-xl px-6 py-3 text-center font-bold text-2xl">
                     Sconto {store.discount}
                   </div>
+                  
+                  {/* Website Link */}
+                  {store.website && (
+                    <a 
+                      href={store.website} 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="mt-4 text-blue-600 hover:text-blue-800 font-semibold underline"
+                    >
+                      Visita il sito →
+                    </a>
+                  )}
                 </div>
 
                 {/* Right: Map */}
