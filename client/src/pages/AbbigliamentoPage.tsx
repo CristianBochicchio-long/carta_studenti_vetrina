@@ -27,6 +27,14 @@ export default function AbbigliamentoPage() {
       logo: "/loghi/mina.png",
       coordinates: { lat: 40.6378, lng: 15.8058 }, // V.le Guglielmo Marconi 96, Potenza
     },
+    {
+      id: 4,
+      name: "Noemi",
+      discount: "15%",
+      description: "Una volta al mese su spesa minima di 20€",
+      logo: "/loghi/logo_noemi.png",
+      coordinates: { lat: 40.6420, lng: 15.8050 }, // Via Lazio 7, Potenza
+    },
   ];
 
   return (
@@ -64,6 +72,13 @@ export default function AbbigliamentoPage() {
                   <div className="bg-pink-500 text-white rounded-xl px-6 py-3 text-center font-bold text-2xl">
                     Sconto {store.discount}
                   </div>
+                  
+                  {/* Description */}
+                  {store.description && (
+                    <p className="mt-3 text-sm text-muted-foreground text-center">
+                      {store.description}
+                    </p>
+                  )}
                   
                   {/* Website Link */}
                   {store.website && (
