@@ -78,19 +78,19 @@ export default function Home() {
 
       <main className="flex-1">
         {/* Hero Section */}
-        <section className="relative py-12 px-4 md:px-8 overflow-hidden">
-          {/* Decorative background elements */}
-          <div className="absolute top-0 right-0 w-96 h-96 bg-gradient-to-br from-primary/5 to-secondary/5 rounded-full blur-3xl -z-10"></div>
-          <div className="absolute bottom-0 left-0 w-96 h-96 bg-gradient-to-tr from-secondary/5 to-primary/5 rounded-full blur-3xl -z-10"></div>
+        <section className="relative py-8 sm:py-12 px-4 sm:px-6 md:px-8 overflow-hidden">
+          {/* Decorative background elements - hidden on mobile */}
+          <div className="hidden sm:block absolute top-0 right-0 w-96 h-96 bg-gradient-to-br from-primary/5 to-secondary/5 rounded-full blur-3xl -z-10"></div>
+          <div className="hidden sm:block absolute bottom-0 left-0 w-96 h-96 bg-gradient-to-tr from-secondary/5 to-primary/5 rounded-full blur-3xl -z-10"></div>
 
-          <div className="max-w-7xl mx-auto flex items-start justify-between gap-8">
+          <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-center sm:items-start justify-between gap-6 sm:gap-8">
             <div className="flex-1">
               {/* Logo with enhanced styling */}
-              <div className="mb-6 transform hover:scale-105 transition-transform duration-300">
+              <div className="mb-6 transform hover:scale-105 transition-transform duration-300 w-full sm:w-auto flex justify-center sm:justify-start">
                 <img 
                   src="/logo-carta-studenti.png" 
                   alt="Carta Studenti" 
-                  className="h-48 w-auto drop-shadow-lg"
+                  className="h-32 sm:h-48 w-auto drop-shadow-lg"
                 />
               </div>
               
@@ -103,37 +103,37 @@ export default function Home() {
               </div>
               
               {/* Main title */}
-              <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-3 leading-tight">
+              <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-foreground mb-3 leading-tight text-center sm:text-left">
                 Carta dello Studente
               </h1>
               
               {/* Enhanced description */}
-              <p className="text-lg text-muted-foreground leading-relaxed max-w-md mb-2">
+              <p className="text-base sm:text-lg text-muted-foreground leading-relaxed max-w-md mb-4 text-center sm:text-left">
                 Sconti esclusivi presso i migliori negozi di Potenza per studenti delle superiori e università
               </p>
               
               {/* Stats */}
-              <div className="flex gap-8 mt-6 text-sm">
-                <div>
-                  <div className="font-bold text-primary text-lg">10+</div>
+              <div className="flex gap-4 sm:gap-8 mt-6 text-xs sm:text-sm justify-center sm:justify-start">
+                <div className="text-center sm:text-left">
+                  <div className="font-bold text-primary text-base sm:text-lg">10+</div>
                   <div className="text-muted-foreground">Categorie</div>
                 </div>
-                <div>
-                  <div className="font-bold text-primary text-lg">20+</div>
+                <div className="text-center sm:text-left">
+                  <div className="font-bold text-primary text-base sm:text-lg">20+</div>
                   <div className="text-muted-foreground">Negozi Partner</div>
                 </div>
-                <div>
-                  <div className="font-bold text-primary text-lg">3,5€</div>
+                <div className="text-center sm:text-left">
+                  <div className="font-bold text-primary text-base sm:text-lg">3,5€</div>
                   <div className="text-muted-foreground">Prezzo Card</div>
                 </div>
               </div>
             </div>
             
             {/* Acquista Button - Enhanced */}
-            <Link href="/acquista" className="flex-shrink-0">
+            <Link href="/acquista" className="flex-shrink-0 w-full sm:w-auto">
               <div className="relative group">
                 <div className="absolute -inset-1 bg-gradient-to-r from-primary to-secondary rounded-2xl blur-lg opacity-75 group-hover:opacity-100 transition-opacity duration-300"></div>
-                <button className="relative bg-gradient-to-br from-primary to-secondary text-white rounded-2xl px-8 py-6 font-bold text-lg shadow-xl hover:shadow-2xl transition-all duration-300 flex items-center gap-2 group-hover:scale-105">
+                <button className="relative w-full sm:w-auto bg-gradient-to-br from-primary to-secondary text-white rounded-2xl px-6 sm:px-8 py-4 sm:py-6 font-bold text-base sm:text-lg shadow-xl hover:shadow-2xl transition-all duration-300 flex items-center justify-center sm:justify-start gap-2 group-hover:scale-105">
                   Acquista Ora
                   <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                 </button>
@@ -143,19 +143,19 @@ export default function Home() {
         </section>
 
         {/* Categories Section */}
-        <section className="py-16 px-4 md:px-8">
+        <section className="py-12 sm:py-16 px-4 sm:px-6 md:px-8">
           <div className="max-w-7xl mx-auto">
-            <div className="text-center mb-16">
-              <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
+            <div className="text-center mb-12 sm:mb-16">
+              <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-foreground mb-3 sm:mb-4">
                 Scopri le Categorie
               </h2>
-              <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+              <p className="text-base sm:text-lg text-muted-foreground max-w-2xl mx-auto">
                 Trova sconti e offerte speciali in tutte le categorie
               </p>
             </div>
 
             {/* Grid layout for categories */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
               {categories.map((category) => (
                 <Link key={category.href} href={category.href} className="group">
                   <div className={`${category.lightBg} border-2 border-transparent hover:border-gray-200 rounded-2xl p-8 transition-all duration-300 hover:shadow-lg hover:scale-105 cursor-pointer`}>
@@ -181,12 +181,12 @@ export default function Home() {
         </section>
 
         {/* CTA Section */}
-        <section className="py-16 px-4 md:px-8 bg-gradient-to-r from-primary/10 via-secondary/10 to-primary/10 rounded-3xl mx-4 md:mx-8 mb-8">
+        <section className="py-12 sm:py-16 px-4 sm:px-6 md:px-8 bg-gradient-to-r from-primary/10 via-secondary/10 to-primary/10 rounded-2xl sm:rounded-3xl mx-4 sm:mx-6 md:mx-8 mb-8">
           <div className="max-w-4xl mx-auto text-center">
-            <h3 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+            <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground mb-3 sm:mb-4">
               Inizia a Risparmiare Oggi
             </h3>
-            <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
+            <p className="text-base sm:text-lg text-muted-foreground mb-6 sm:mb-8 max-w-2xl mx-auto">
               Acquista la tua Carta dello Studente e accedi a sconti esclusivi presso i migliori negozi di Potenza
             </p>
             <Link href="/acquista">

@@ -34,7 +34,7 @@ export default function AbbigliamentoPage() {
     <div className="min-h-screen flex flex-col bg-gradient-to-b from-white via-pink-50/30 to-white">
       <Header />
 
-      <main className="flex-1 py-12 px-4 md:px-8">
+      <main className="flex-1 py-8 sm:py-12 px-4 sm:px-6 md:px-8">
         <div className="max-w-7xl mx-auto">
           {/* Back Button */}
           <Link href="/">
@@ -45,17 +45,17 @@ export default function AbbigliamentoPage() {
           </Link>
 
           {/* Page Header */}
-          <div className="mb-12">
-            <h1 className="text-5xl md:text-6xl font-bold text-foreground mb-4">
+          <div className="mb-8 sm:mb-12">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-2 sm:mb-4">
               Abbigliamento
             </h1>
-            <p className="text-xl text-muted-foreground max-w-2xl">
+            <p className="text-base sm:text-lg md:text-xl text-muted-foreground max-w-2xl">
               Scopri i migliori negozi di moda e accessori con sconti esclusivi per studenti
             </p>
           </div>
 
           {/* Stores Grid */}
-          <div className="grid grid-cols-1 gap-10">
+          <div className="grid grid-cols-1 gap-6 sm:gap-8 md:gap-10">
             {stores.map((store, index) => (
               <div 
                 key={store.id} 
@@ -68,26 +68,26 @@ export default function AbbigliamentoPage() {
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-0 bg-white">
                   {/* Left: Logo, Name, Discount */}
-                  <div className={`flex flex-col items-center justify-center p-8 md:p-12 ${index % 2 === 1 ? 'md:order-2' : ''}`}>
+                  <div className="flex flex-col items-center justify-center p-6 sm:p-8 md:p-12">
                     {/* Logo Container */}
-                    <div className="w-full h-56 bg-gradient-to-br from-pink-50 to-rose-50 rounded-2xl mb-6 flex items-center justify-center shadow-sm group-hover:shadow-md transition-shadow">
+                    <div className="w-full h-40 sm:h-56 bg-gradient-to-br from-pink-50 to-rose-50 rounded-xl sm:rounded-2xl mb-4 sm:mb-6 flex items-center justify-center shadow-sm group-hover:shadow-md transition-shadow">
                       <img 
                         src={store.logo} 
                         alt={store.name}
-                        className="h-48 w-auto object-contain drop-shadow-sm group-hover:scale-110 transition-transform duration-300"
+                        className="h-32 sm:h-48 w-auto object-contain drop-shadow-sm group-hover:scale-110 transition-transform duration-300"
                       />
                     </div>
 
                     {/* Store Name */}
-                    <h2 className="text-4xl font-bold text-foreground mb-6 text-center">
+                    <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground mb-4 sm:mb-6 text-center">
                       {store.name}
                     </h2>
                     
                     {/* Discount Badge */}
-                    <div className="relative mb-6">
+                    <div className="relative mb-4 sm:mb-6 w-full">
                       <div className="absolute -inset-1 bg-gradient-to-r from-pink-500 to-rose-500 rounded-xl blur-sm opacity-75 group-hover:opacity-100 transition-opacity"></div>
-                      <div className="relative bg-white rounded-xl px-8 py-4 text-center">
-                        <div className="text-4xl font-bold bg-gradient-to-r from-pink-500 to-rose-500 bg-clip-text text-transparent">
+                      <div className="relative bg-white rounded-xl px-6 sm:px-8 py-3 sm:py-4 text-center">
+                        <div className="text-2xl sm:text-3xl md:text-4xl font-bold bg-gradient-to-r from-pink-500 to-rose-500 bg-clip-text text-transparent">
                           Sconto {store.discount}
                         </div>
                       </div>
@@ -99,7 +99,7 @@ export default function AbbigliamentoPage() {
                         href={store.website} 
                         target="_blank" 
                         rel="noopener noreferrer"
-                        className="inline-flex items-center gap-2 mt-6 px-6 py-3 bg-gradient-to-r from-pink-100 to-rose-100 text-primary font-semibold rounded-xl hover:from-pink-200 hover:to-rose-200 transition-all duration-300 group-hover:scale-105"
+                        className="inline-flex items-center justify-center gap-2 mt-4 sm:mt-6 px-4 sm:px-6 py-2 sm:py-3 bg-gradient-to-r from-pink-100 to-rose-100 text-primary font-semibold text-sm sm:text-base rounded-lg sm:rounded-xl hover:from-pink-200 hover:to-rose-200 transition-all duration-300 group-hover:scale-105 w-full sm:w-auto"
                       >
                         Visita il sito
                         <ExternalLink className="w-4 h-4" />
@@ -108,12 +108,12 @@ export default function AbbigliamentoPage() {
                   </div>
 
                   {/* Right: Map */}
-                  <div className={`p-8 md:p-12 flex flex-col justify-center ${index % 2 === 1 ? 'md:order-1' : ''}`}>
-                    <div className="flex items-center gap-2 mb-6">
+                  <div className="p-6 sm:p-8 md:p-12 flex flex-col justify-center">
+                    <div className="flex items-center gap-2 mb-4 sm:mb-6">
                       <MapPin className="w-5 h-5 text-pink-500" />
-                      <h3 className="text-2xl font-bold text-foreground">Posizione</h3>
+                      <h3 className="text-lg sm:text-2xl font-bold text-foreground">Posizione</h3>
                     </div>
-                    <div className="rounded-2xl overflow-hidden h-80 border-2 border-pink-100 shadow-lg group-hover:shadow-xl transition-shadow">
+                    <div className="rounded-xl sm:rounded-2xl overflow-hidden h-60 sm:h-80 border-2 border-pink-100 shadow-lg group-hover:shadow-xl transition-shadow">
                       <MapView 
                         initialCenter={store.coordinates}
                         initialZoom={15}

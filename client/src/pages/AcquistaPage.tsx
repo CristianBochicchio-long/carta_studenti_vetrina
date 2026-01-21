@@ -60,78 +60,78 @@ export default function AcquistaPage() {
     <div className="min-h-screen flex flex-col bg-gradient-to-b from-white via-blue-50/20 to-white">
       <Header />
 
-      <main className="flex-1 py-12 px-4 md:px-8">
+      <main className="flex-1 py-8 sm:py-12 px-4 sm:px-6 md:px-8">
         <div className="max-w-4xl mx-auto">
           {/* Back Button */}
           <Link href="/">
-            <button className="mb-8 inline-flex items-center gap-2 text-primary font-semibold hover:gap-3 transition-all duration-300 group">
+            <button className="mb-6 sm:mb-8 inline-flex items-center gap-2 text-primary font-semibold hover:gap-3 transition-all duration-300 group">
               <ArrowLeft className="w-5 h-5 group-hover:-translate-x-1 transition-transform" />
               Torna alle categorie
             </button>
           </Link>
 
           {/* Hero Section */}
-          <div className="text-center mb-16">
-            <div className="relative w-32 h-32 mx-auto mb-8">
+          <div className="text-center mb-12 sm:mb-16">
+            <div className="relative w-24 sm:w-32 h-24 sm:h-32 mx-auto mb-6 sm:mb-8">
               <div className="absolute inset-0 bg-gradient-to-br from-primary to-secondary rounded-2xl blur-lg opacity-50"></div>
               <div className="relative bg-white rounded-2xl p-4 flex items-center justify-center shadow-xl">
                 <img 
                   src="/logo-carta-studenti.png" 
                   alt="Carta Studenti" 
-                  className="h-24 w-auto"
+                  className="h-16 sm:h-24 w-auto"
                 />
               </div>
             </div>
             
-            <h1 className="text-5xl md:text-6xl font-bold text-foreground mb-4">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-3 sm:mb-4">
               Acquista la Carta
             </h1>
-            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+            <p className="text-base sm:text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto">
               Ottieni accesso a sconti esclusivi presso i migliori negozi di Potenza
             </p>
           </div>
 
           {/* Price Card */}
-          <div className="relative mb-16 group">
-            <div className="absolute -inset-1 bg-gradient-to-r from-primary via-secondary to-primary rounded-3xl blur-xl opacity-75 group-hover:opacity-100 transition-opacity duration-300"></div>
-            <div className="relative bg-gradient-to-br from-primary to-secondary rounded-3xl p-12 text-center text-white shadow-2xl">
-              <div className="flex items-center justify-center gap-3 mb-4">
-                <Zap className="w-8 h-8" />
-                <span className="text-lg font-semibold">OFFERTA SPECIALE</span>
+          <div className="relative mb-12 sm:mb-16 group">
+            <div className="absolute -inset-1 bg-gradient-to-r from-primary via-secondary to-primary rounded-2xl sm:rounded-3xl blur-xl opacity-75 group-hover:opacity-100 transition-opacity duration-300"></div>
+            <div className="relative bg-gradient-to-br from-primary to-secondary rounded-2xl sm:rounded-3xl p-8 sm:p-12 text-center text-white shadow-2xl">
+              <div className="flex items-center justify-center gap-3 mb-3 sm:mb-4">
+                <Zap className="w-6 sm:w-8 h-6 sm:h-8" />
+                <span className="text-base sm:text-lg font-semibold">OFFERTA SPECIALE</span>
               </div>
-              <div className="text-7xl font-bold mb-2">3,5€</div>
-              <p className="text-lg opacity-90">Pagamento in contanti al ritiro</p>
-              <p className="text-sm opacity-75 mt-2">Accesso a 20+ negozi partner</p>
+              <div className="text-5xl sm:text-6xl md:text-7xl font-bold mb-2">3,5€</div>
+              <p className="text-base sm:text-lg opacity-90">Pagamento in contanti al ritiro</p>
+              <p className="text-xs sm:text-sm opacity-75 mt-2">Accesso a 20+ negozi partner</p>
             </div>
           </div>
 
           {/* Steps Section */}
-          <div className="mb-16">
-            <h2 className="text-4xl font-bold text-foreground mb-12 text-center">
+          <div className="mb-12 sm:mb-16">
+            <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-8 sm:mb-12 text-center">
               Come Acquistare
             </h2>
             
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
               {steps.map((step, index) => (
                 <div 
                   key={step.number}
-                  className="group relative bg-white rounded-2xl p-8 border-2 border-gray-100 hover:border-primary/30 transition-all duration-300 hover:shadow-lg hover:scale-105"
+                  className="group relative bg-white rounded-xl sm:rounded-2xl p-6 sm:p-8 border-2 border-gray-100 hover:border-primary/30 transition-all duration-300 hover:shadow-lg hover:scale-105"
                 >
                   {/* Step number badge */}
-                  <div className="absolute -top-4 -left-4 w-12 h-12 bg-gradient-to-br from-primary to-secondary text-white rounded-full flex items-center justify-center font-bold text-lg shadow-lg group-hover:scale-110 transition-transform">
+                  <div className="absolute -top-3 -left-3 sm:-top-4 sm:-left-4 w-10 sm:w-12 h-10 sm:h-12 bg-gradient-to-br from-primary to-secondary text-white rounded-full flex items-center justify-center font-bold text-base sm:text-lg shadow-lg group-hover:scale-110 transition-transform">
                     {step.number}
                   </div>
 
                   {/* Icon */}
-                  <div className="text-5xl mb-4 group-hover:scale-110 transition-transform duration-300">
+                  <div className="text-4xl sm:text-5xl mb-3 sm:mb-4 group-hover:scale-110 transition-transform duration-300">
                     {step.icon}
                   </div>
 
                   {/* Content */}
-                  <h3 className="text-2xl font-bold text-foreground mb-2">
+                  <h3 className="text-lg sm:text-2xl font-bold text-foreground mb-2">
                     {step.title}
                   </h3>
-                  <p className="text-muted-foreground leading-relaxed">
+                  <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">
                     {step.description}
                   </p>
 
