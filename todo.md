@@ -63,4 +63,4 @@
 - [x] Correggere coordinate Capatosta Bakery con Plus Code JRR7+G5C Potenza
 
 ## Miglioramenti Mappe
-- [x] Aggiungere marker visibili su tutte le mappe per indicare posizione esatta negozi
+- [x] Aggiungere marker visibili su tutte le mappe per indicare posizione esatta negozi (RISOLTO con HTML overlay rosso)

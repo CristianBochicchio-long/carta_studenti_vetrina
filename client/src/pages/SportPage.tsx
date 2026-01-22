@@ -69,20 +69,27 @@ export default function SportPage() {
                 {/* Right: Map */}
                 <div>
                   <h3 className="text-lg font-bold text-foreground mb-4">Posizione</h3>
-                  <div className="rounded-xl overflow-hidden h-80 border border-gray-200">
+                  <div className="rounded-xl overflow-hidden h-80 border border-gray-200 relative">
                     <MapView 
                       initialCenter={store.coordinates}
                       initialZoom={15}
                       onMapReady={(map: google.maps.Map) => {
-                        // Create a classic red marker (works without mapId)
+                        // Create a large red pin marker
+                        const pinMarker = {
+                          path: "M 0,0 C -2,-20 -10,-22 -10,-30 A 10,10 0 1,1 10,-30 C 10,-22 2,-20 0,0 z",
+                          fillColor: "#ef4444",
+                          fillOpacity: 1,
+                          strokeColor: "#991b1b",
+                          strokeWeight: 2,
+                          scale: 2,
+                        };
+                        
                         new google.maps.Marker({
                           map: map,
                           position: store.coordinates,
                           title: store.name,
-                          icon: {
-                            url: "http://maps.google.com/mapfiles/ms/icons/red-dot.png",
-                            scaledSize: new google.maps.Size(40, 40),
-                          },
+                          icon: pinMarker,
+                          animation: google.maps.Animation.DROP,
                         });
                       }}
                     />
