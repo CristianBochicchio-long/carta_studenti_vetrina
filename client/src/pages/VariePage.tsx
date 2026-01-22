@@ -94,11 +94,12 @@ export default function VariePage() {
                       initialCenter={store.coordinates}
                       initialZoom={15}
                       onMapReady={(map: google.maps.Map) => {
-                        // Create a marker for the store
-                        const marker = new google.maps.marker.AdvancedMarkerElement({
+                        // Create a visible red marker for the store
+                        new google.maps.Marker({
                           map: map,
                           position: store.coordinates,
                           title: store.name,
+                          animation: google.maps.Animation.DROP,
                         });
                       }}
                     />

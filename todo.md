@@ -61,3 +61,6 @@
 - [x] Correggere coordinate Chiattò con Plus Code JQWW+XH Potenza
 - [x] Correggere coordinate Oliveto con Plus Code JQVQ+9W Potenza
 - [x] Correggere coordinate Capatosta Bakery con Plus Code JRR7+G5C Potenza
+
+## Miglioramenti Mappe
+- [x] Aggiungere marker visibili su tutte le mappe per indicare posizione esatta negozi
