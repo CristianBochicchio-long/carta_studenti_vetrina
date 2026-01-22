@@ -72,3 +72,5 @@
 
 ## Aggiornamento Coordinate Precise
 - [x] Aggiornare coordinate di 15 negozi con dati precisi forniti dall'utente
+## Nuovo Negozio Bar Mazzini
+- [x] Aggiungere Bar Mazzini Caffè nella categoria Cibo con sconto 15%

@@ -47,6 +47,13 @@ export default function CiboPage() {
       logo: "/loghi/chiatto.png",
       coordinates: { lat: 40.6473962, lng: 15.7964117 }, // JQWW+XH Potenza - Piazza S. Giovanni Bosco 15
     },
+    {
+      id: 7,
+      name: "Mazzini Caffè",
+      discount: "15%",
+      logo: "/bar_mazzini_logo.jpg",
+      coordinates: { lat: 40.6388962, lng: 15.8006009 }, // JRQ2+H6 Potenza - Via Giuseppe Mazzini 61
+    },
   ];
 
   return (
