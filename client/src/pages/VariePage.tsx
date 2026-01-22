@@ -27,6 +27,14 @@ export default function VariePage() {
       coordinates: { lat: 40.6383504, lng: 15.8028 }, // Via Pretoria 105, Potenza
       website: "https://riviellogioielli.it",
     },
+    {
+      id: 4,
+      name: "Festidea Animazione ed Eventi",
+      discount: "15%",
+      logo: "/festidea_logo.jpg",
+      coordinates: { lat: 40.6527659, lng: 15.7980751 }, // Via Alassio, 20, Potenza
+      website: "https://festidea.it",
+    },
   ];
 
   return (

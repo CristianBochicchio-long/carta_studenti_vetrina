@@ -8,9 +8,17 @@ export default function SalutePage() {
     {
       id: 1,
       name: "Irene Beauty Specialist",
-      discount: "10%",
+      discount: "15%",
       logo: "/loghi/irene.png",
       coordinates: { lat: 40.5751716, lng: 15.7815401 }, // Via Aldo Moro 69, Pignola
+    },
+    {
+      id: 3,
+      name: "Zone 14 barber shop",
+      discount: "10%",
+      logo: "/zone14_logo.png",
+      coordinates: { lat: 40.6393832, lng: 15.7839286 }, // Viale Vincenzo Verrastro, 21c, Potenza
+      website: "zone14barbershop.it"
     },
     {
       id: 2,
@@ -70,6 +78,18 @@ export default function SalutePage() {
                   <div className="bg-pink-500 text-white rounded-xl px-6 py-3 text-center font-bold text-2xl">
                     {store.discount}
                   </div>
+                  
+                  {/* Website Link */}
+                  {store.website && (
+                    <a 
+                      href={`https://${store.website}`} 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="mt-4 text-blue-600 hover:text-blue-800 font-semibold underline"
+                    >
+                      Visita il sito →
+                    </a>
+                  )}
                   
                   {/* Offers List for Make Difference */}
                   {store.offers && (

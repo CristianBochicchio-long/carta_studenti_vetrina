@@ -54,3 +54,5 @@
 - [x] Aggiungere Capatosta Bakery nella categoria Cibo con sconto 10%
 - [x] Aggiungere Chiattò nella categoria Cibo con sconto 10%
 - [x] Aggiungere Gelateria Oliveto (logodef1scrittanera.pdf) nella categoria Cibo con sconto 10%
+- [x] Aggiungere Zone 14 barber shop nella categoria Salute con sconto 10%
+- [x] Aggiungere Festidea Animazione ed Eventi nella categoria Varie con sconto 15%
