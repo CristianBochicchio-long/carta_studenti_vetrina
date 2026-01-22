@@ -49,3 +49,8 @@
 - [ ] In attesa: Email di contatto reale
 - [ ] In attesa: Numero di telefono reale
 - [ ] In attesa: Profilo Instagram reale
+
+## Nuovi Negozi da Aggiungere
+- [x] Aggiungere Capatosta Bakery nella categoria Cibo con sconto 10%
+- [x] Aggiungere Chiattò nella categoria Cibo con sconto 10%
+- [x] Aggiungere Gelateria Oliveto (logodef1scrittanera.pdf) nella categoria Cibo con sconto 10%

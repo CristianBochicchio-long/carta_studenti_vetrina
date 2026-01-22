@@ -26,6 +26,27 @@ export default function CiboPage() {
       logo: "/loghi/don_bosco.jpg",
       coordinates: { lat: 40.6469793, lng: 15.7967429 }, // Piazza S. Giovanni Bosco 26, Potenza
     },
+    {
+      id: 4,
+      name: "Gelateria Oliveto",
+      discount: "10%",
+      logo: "/loghi/gelateria_oliveto.png",
+      coordinates: { lat: 40.6433, lng: 15.7897 }, // Piazzale Sofia 18, Potenza
+    },
+    {
+      id: 5,
+      name: "Capatosta Bakery",
+      discount: "10%",
+      logo: "/loghi/capatosta_bakery.jpg",
+      coordinates: { lat: 40.6414747, lng: 15.8127756 }, // Borgo S. Rocco 10, Potenza
+    },
+    {
+      id: 6,
+      name: "Chiattò",
+      discount: "10%",
+      logo: "/loghi/chiatto.png",
+      coordinates: { lat: 40.6474, lng: 15.7963 }, // Piazza S. Giovanni Bosco 15, Potenza
+    },
   ];
 
   return (
