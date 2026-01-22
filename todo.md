@@ -56,3 +56,8 @@
 - [x] Aggiungere Gelateria Oliveto (logodef1scrittanera.pdf) nella categoria Cibo con sconto 10%
 - [x] Aggiungere Zone 14 barber shop nella categoria Salute con sconto 10%
 - [x] Aggiungere Festidea Animazione ed Eventi nella categoria Varie con sconto 15%
+
+## Correzioni Coordinate
+- [x] Correggere coordinate Chiattò con Plus Code JQWW+XH Potenza
+- [x] Correggere coordinate Oliveto con Plus Code JQVQ+9W Potenza
+- [x] Correggere coordinate Capatosta Bakery con Plus Code JRR7+G5C Potenza

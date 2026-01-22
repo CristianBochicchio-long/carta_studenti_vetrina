@@ -31,21 +31,21 @@ export default function CiboPage() {
       name: "Gelateria Oliveto",
       discount: "10%",
       logo: "/loghi/gelateria_oliveto.png",
-      coordinates: { lat: 40.6433, lng: 15.7897 }, // Piazzale Sofia 18, Potenza
+      coordinates: { lat: 40.6435, lng: 15.7895 }, // JQVQ+9W Potenza - Piazzale Sofia 18
     },
     {
       id: 5,
       name: "Capatosta Bakery",
       discount: "10%",
       logo: "/loghi/capatosta_bakery.jpg",
-      coordinates: { lat: 40.6414747, lng: 15.8127756 }, // Borgo S. Rocco 10, Potenza
+      coordinates: { lat: 40.6413, lng: 15.8130 }, // JRR7+G5C Potenza - Borgo S. Rocco 10
     },
     {
       id: 6,
       name: "Chiattò",
       discount: "10%",
       logo: "/loghi/chiatto.png",
-      coordinates: { lat: 40.6474, lng: 15.7963 }, // Piazza S. Giovanni Bosco 15, Potenza
+      coordinates: { lat: 40.6474, lng: 15.7965 }, // JQWW+XH Potenza - Piazza S. Giovanni Bosco 15
     },
   ];
 
