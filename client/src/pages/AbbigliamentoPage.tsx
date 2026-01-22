@@ -101,19 +101,15 @@ export default function AbbigliamentoPage() {
                       initialCenter={store.coordinates}
                       initialZoom={15}
                       onMapReady={(map: google.maps.Map) => {
-                        // Create a visible red pin marker for the store
-                        const pin = new google.maps.marker.PinElement({
-                          background: "#ef4444",
-                          borderColor: "#991b1b",
-                          glyphColor: "#ffffff",
-                          scale: 1.5,
-                        });
-                        
-                        new google.maps.marker.AdvancedMarkerElement({
+                        // Create a classic red marker (works without mapId)
+                        new google.maps.Marker({
                           map: map,
                           position: store.coordinates,
                           title: store.name,
-                          content: pin.element,
+                          icon: {
+                            url: "http://maps.google.com/mapfiles/ms/icons/red-dot.png",
+                            scaledSize: new google.maps.Size(40, 40),
+                          },
                         });
                       }}
                     />
