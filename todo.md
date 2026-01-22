@@ -64,3 +64,11 @@
 
 ## Miglioramenti Mappe
 - [x] Aggiungere marker visibili su tutte le mappe per indicare posizione esatta negozi (RISOLTO con HTML overlay rosso)
+
+## Verifica Marker e Coordinate
+- [x] Verificare che TUTTI i negozi abbiano marker rossi visibili
+- [x] Controllare coordinate di ogni negozio per accuratezza
+- [x] Segnalare negozi con coordinate mancanti o imprecise
+
+## Aggiornamento Coordinate Precise
+- [x] Aggiornare coordinate di 15 negozi con dati precisi forniti dall'utente

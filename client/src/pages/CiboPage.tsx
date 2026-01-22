@@ -17,7 +17,7 @@ export default function CiboPage() {
       name: "Number One Community Bar",
       discount: "15%",
       logo: "/loghi/numberone.jpg",
-      coordinates: { lat: 40.6388513, lng: 15.8058681 }, // Via Pretoria, Potenza
+      coordinates: { lat: 40.6388956, lng: 15.8058916 }, // Via Pretoria, Potenza
     },
     {
       id: 3,
@@ -31,21 +31,21 @@ export default function CiboPage() {
       name: "Gelateria Oliveto",
       discount: "10%",
       logo: "/loghi/gelateria_oliveto.png",
-      coordinates: { lat: 40.6435, lng: 15.7895 }, // JQVQ+9W Potenza - Piazzale Sofia 18
+      coordinates: { lat: 40.6434657, lng: 15.789762 }, // JQVQ+9W Potenza - Piazzale Sofia 18
     },
     {
       id: 5,
       name: "Capatosta Bakery",
       discount: "10%",
       logo: "/loghi/capatosta_bakery.jpg",
-      coordinates: { lat: 40.6413, lng: 15.8130 }, // JRR7+G5C Potenza - Borgo S. Rocco 10
+      coordinates: { lat: 40.6413151, lng: 15.8129099 }, // JRR7+G5C Potenza - Borgo S. Rocco 10
     },
     {
       id: 6,
       name: "Chiattò",
       discount: "10%",
       logo: "/loghi/chiatto.png",
-      coordinates: { lat: 40.6474, lng: 15.7965 }, // JQWW+XH Potenza - Piazza S. Giovanni Bosco 15
+      coordinates: { lat: 40.6473962, lng: 15.7964117 }, // JQWW+XH Potenza - Piazza S. Giovanni Bosco 15
     },
   ];
 

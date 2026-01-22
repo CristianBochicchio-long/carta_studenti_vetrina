@@ -10,7 +10,7 @@ export default function AbbigliamentoPage() {
       name: "Vanity",
       discount: "10%",
       logo: "/loghi/vanity.png?v=3",
-      coordinates: { lat: 40.640362, lng: 15.8044015 }, // Via Giuseppe Mazzini 96, Potenza
+      coordinates: { lat: 40.6421726, lng: 15.8046852 }, // Via Giuseppe Mazzini 96, Potenza
     },
     {
       id: 2,
@@ -25,7 +25,7 @@ export default function AbbigliamentoPage() {
       name: "Mina",
       discount: "10%",
       logo: "/loghi/mina.png",
-      coordinates: { lat: 40.6378, lng: 15.8058 }, // V.le Guglielmo Marconi 96, Potenza
+      coordinates: { lat: 40.6356209, lng: 15.8045061 }, // V.le Guglielmo Marconi 96, Potenza
     },
     {
       id: 4,
@@ -33,7 +33,7 @@ export default function AbbigliamentoPage() {
       discount: "15%",
       description: "Una volta al mese su spesa minima di 20€",
       logo: "/loghi/logo_noemi.png",
-      coordinates: { lat: 40.6420, lng: 15.8050 }, // Via Lazio 7, Potenza
+      coordinates: { lat: 40.6467198, lng: 15.8028357 }, // Via Lazio 7, Potenza
     },
   ];
 
