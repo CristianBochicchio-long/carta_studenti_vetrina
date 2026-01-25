@@ -74,3 +74,6 @@
 - [x] Aggiornare coordinate di 15 negozi con dati precisi forniti dall'utente
 ## Nuovo Negozio Bar Mazzini
 - [x] Aggiungere Bar Mazzini Caffè nella categoria Cibo con sconto 15%
+
+## Nuovo Negozio Pizzeria Borgo San Michele
+- [x] Aggiungere Pizzeria Borgo San Michele nella categoria Cibo con sconto 10%

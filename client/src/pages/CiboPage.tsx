@@ -54,6 +54,13 @@ export default function CiboPage() {
       logo: "/bar_mazzini_logo.jpg",
       coordinates: { lat: 40.6388962, lng: 15.8006009 }, // JRQ2+H6 Potenza - Via Giuseppe Mazzini 61
     },
+    {
+      id: 8,
+      name: "Pizzeria Borgo San Michele",
+      discount: "10%",
+      logo: "/loghi/borgo_san_michele.png",
+      coordinates: { lat: 40.6380946, lng: 15.8013649 }, // JRQ2+6G Potenza - Via Giordano Bruno 16
+    },
   ];
 
   return (
