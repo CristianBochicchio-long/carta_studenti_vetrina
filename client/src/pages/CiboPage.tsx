@@ -10,59 +10,38 @@ export default function CiboPage() {
       name: "Pasticceria Mancino",
       discount: "10%",
       logo: "/loghi/mancino.jpg",
-      coordinates: { lat: 40.6325441, lng: 15.7916009 }, // Via Tirreno 29, Potenza
+      coordinates: { lat: 40.6388962, lng: 15.8006009 }, // JQMR+2J Potenza
     },
     {
       id: 2,
       name: "Number One Community Bar",
       discount: "15%",
       logo: "/loghi/numberone.jpg",
-      coordinates: { lat: 40.6388956, lng: 15.8058916 }, // Via Pretoria, Potenza
+      coordinates: { lat: 40.6380946, lng: 15.8013649 }, // JRQ4+H9 Potenza
     },
     {
       id: 3,
-      name: "Caffetteria Don Bosco",
+      name: "Chiattò",
       discount: "10%",
-      logo: "/loghi/don_bosco.jpg",
-      coordinates: { lat: 40.6469793, lng: 15.7967429 }, // Piazza S. Giovanni Bosco 26, Potenza
+      logo: "/loghi/chiatto.png",
+      coordinates: { lat: 40.6473962, lng: 15.7964117 }, // JQWW+XH Potenza
     },
     {
       id: 4,
       name: "Gelateria Oliveto",
       discount: "10%",
       logo: "/loghi/gelateria_oliveto.png",
-      coordinates: { lat: 40.6434657, lng: 15.789762 }, // JQVQ+9W Potenza - Piazzale Sofia 18
+      coordinates: { lat: 40.6434657, lng: 15.789762 }, // JQVQ+9W Potenza
     },
     {
       id: 5,
       name: "Capatosta Bakery",
       discount: "10%",
       logo: "/loghi/capatosta_bakery.jpg",
-      coordinates: { lat: 40.6413151, lng: 15.8129099 }, // JRR7+G5C Potenza - Borgo S. Rocco 10
+      coordinates: { lat: 40.6413151, lng: 15.8129099 }, // Capatosta Bakery
     },
     {
       id: 6,
-      name: "Chiattò",
-      discount: "10%",
-      logo: "/loghi/chiatto.png",
-      coordinates: { lat: 40.6473962, lng: 15.7964117 }, // JQWW+XH Potenza - Piazza S. Giovanni Bosco 15
-    },
-    {
-      id: 7,
-      name: "Mazzini Caffè",
-      discount: "15%",
-      logo: "/bar_mazzini_logo.jpg",
-      coordinates: { lat: 40.6388962, lng: 15.8006009 }, // JRQ2+H6 Potenza - Via Giuseppe Mazzini 61
-    },
-    {
-      id: 8,
-      name: "Pizzeria Borgo San Michele",
-      discount: "10%",
-      logo: "/loghi/borgo_san_michele.png",
-      coordinates: { lat: 40.6380946, lng: 15.8013649 }, // JRQ2+6G Potenza - Via Giordano Bruno 16
-    },
-    {
-      id: 9,
       name: "Bar Principe",
       discount: "10%",
       logo: "/bar-principe-logo.png",

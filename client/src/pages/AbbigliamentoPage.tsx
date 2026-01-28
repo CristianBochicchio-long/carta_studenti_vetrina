@@ -10,14 +10,14 @@ export default function AbbigliamentoPage() {
       name: "Vanity",
       discount: "10%",
       logo: "/loghi/vanity.png?v=3",
-      coordinates: { lat: 40.6421726, lng: 15.8046852 }, // Via Giuseppe Mazzini 96, Potenza
+      coordinates: { lat: 40.6413151, lng: 15.8129099 }, // JRR3+VV Potenza
     },
     {
       id: 2,
       name: "Life Style",
       discount: "10%",
       logo: "/loghi/lifestyle.png",
-      coordinates: { lat: 40.6387142, lng: 15.8046618 }, // Via Pretoria 212, Potenza
+      coordinates: { lat: 40.6387142, lng: 15.8046618 }, // JRQ3+FV Potenza
       website: "https://lifestyleshop.it",
     },
     {
@@ -25,7 +25,7 @@ export default function AbbigliamentoPage() {
       name: "Mina",
       discount: "10%",
       logo: "/loghi/mina.png",
-      coordinates: { lat: 40.6356209, lng: 15.8045061 }, // V.le Guglielmo Marconi 96, Potenza
+      coordinates: { lat: 40.6356209, lng: 15.8045061 }, // JRP3+6R Potenza
     },
     {
       id: 4,
@@ -33,7 +33,7 @@ export default function AbbigliamentoPage() {
       discount: "15%",
       description: "Una volta al mese su spesa minima di 20€",
       logo: "/loghi/logo_noemi.png",
-      coordinates: { lat: 40.6467198, lng: 15.8028357 }, // Via Lazio 7, Potenza
+      coordinates: { lat: 40.6467198, lng: 15.8028357 }, // JRW3+M4 Potenza
     },
   ];
 

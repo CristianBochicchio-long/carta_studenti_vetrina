@@ -10,14 +10,14 @@ export default function SalutePage() {
       name: "Irene Beauty Specialist",
       discount: "15%",
       logo: "/loghi/irene.png",
-      coordinates: { lat: 40.5751716, lng: 15.7815401 }, // Via Aldo Moro 69, Pignola
+      coordinates: { lat: 40.5751716, lng: 15.7815401 }, // HQGJ+3J Pignola
     },
     {
       id: 3,
       name: "Zone 14 barber shop",
       discount: "10%",
       logo: "/zone14_logo.png",
-      coordinates: { lat: 40.6393832, lng: 15.7839286 }, // Viale Vincenzo Verrastro, 21c, Potenza
+      coordinates: { lat: 40.6393832, lng: 15.7839286 }, // JQQM+QH Potenza
       website: "zone14barbershop.it"
     },
     {
@@ -25,7 +25,7 @@ export default function SalutePage() {
       name: "Make Difference",
       discount: "Offerte Speciali",
       logo: "/loghi/make_difference.jpg?v=1",
-      coordinates: { lat: 40.637942, lng: 15.781883 }, // JQQJ+5QC, Via Isca del Pioppo, Iper Futura, Potenza
+      coordinates: { lat: 40.637942, lng: 15.781883 }, // JQQJ+QX Potenza
       offers: [
         {
           title: "Colore + piega 'Study Break'",
