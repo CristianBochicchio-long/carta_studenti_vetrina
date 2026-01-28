@@ -61,6 +61,13 @@ export default function CiboPage() {
       logo: "/loghi/borgo_san_michele.png",
       coordinates: { lat: 40.6380946, lng: 15.8013649 }, // JRQ2+6G Potenza - Via Giordano Bruno 16
     },
+    {
+      id: 9,
+      name: "Bar Principe",
+      discount: "10%",
+      logo: "/bar-principe-logo.png",
+      coordinates: { lat: 40.6393, lng: 15.7824 }, // JRX2+GG Potenza
+    },
   ];
 
   return (

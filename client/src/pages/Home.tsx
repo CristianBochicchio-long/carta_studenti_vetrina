@@ -4,6 +4,15 @@ import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
 
 export default function Home() {
+  const stores = [
+    {
+      name: "Cineatro Don Bosco",
+      location: "JQXW+3F Potenza, Provincia di Potenza",
+      category: "Varie",
+      discount: "Sconti esclusivi"
+    }
+  ];
+
   const categories = [
     {
       title: "Abbigliamento",
@@ -35,7 +44,7 @@ export default function Home() {
     },
     {
       title: "Varie",
-      description: "Librerie, elettronica e altro",
+      description: "Librerie, elettronica, cinema e altro",
       icon: "📚",
       href: "/varie",
       color: "bg-gradient-to-br from-purple-500 to-purple-600",
