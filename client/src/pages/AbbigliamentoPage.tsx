@@ -101,25 +101,21 @@ export default function AbbigliamentoPage() {
                       initialCenter={store.coordinates}
                       initialZoom={15}
                       onMapReady={(map: google.maps.Map) => {
-                        // Create a large red pin marker
-                        const pinMarker = {
-                          path: "M 0,0 C -2,-20 -10,-22 -10,-30 A 10,10 0 1,1 10,-30 C 10,-22 2,-20 0,0 z",
-                          fillColor: "#ef4444",
-                          fillOpacity: 1,
-                          strokeColor: "#991b1b",
-                          strokeWeight: 2,
-                          scale: 2,
-                        };
-                        
+                        // Create DEFAULT Google Maps marker (red pin)
                         new google.maps.Marker({
                           map: map,
                           position: store.coordinates,
                           title: store.name,
-                          icon: pinMarker,
-                          animation: google.maps.Animation.DROP,
                         });
                       }}
                     />
+                    {/* HTML Overlay Marker - always visible */}
+                    <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-full pointer-events-none z-50">
+                      <div className="relative">
+                        <div className="w-8 h-8 bg-red-500 rounded-full border-4 border-white shadow-lg"></div>
+                        <div className="absolute top-full left-1/2 -translate-x-1/2 w-0 h-0 border-l-[8px] border-l-transparent border-r-[8px] border-r-transparent border-t-[12px] border-t-red-500"></div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
