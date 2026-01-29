@@ -42,6 +42,13 @@ export default function VariePage() {
       logo: "/cineatro-don-bosco-10.png",
       coordinates: { lat: 40.6383504, lng: 15.8028 }, // JQXW+3F Potenza
     },
+    {
+      id: 6,
+      name: "Potenza Experience",
+      discount: "10%",
+      logo: "/potenza-experience-logo.png",
+      coordinates: { lat: 40.6413, lng: 15.8046 }, // 8FGQJRQ4+X6 Potenza
+    },
   ];
 
   return (
