@@ -80,3 +80,6 @@
 
 ## Bottone Google Maps
 - [x] Aggiungere bottone "Apri su Google Maps" sotto ogni negozio in tutte le categorie
+
+## Rimozione Mappe
+- [x] Rimuovere componente MapView da tutte le pagine categorie e lasciare solo indirizzo con bottone Google Maps

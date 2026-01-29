@@ -97,28 +97,16 @@ export default function SalutePage() {
                   )}
                 </div>
 
-                {/* Right: Map */}
+                {/* Right: Indirizzo */}
                 <div>
                   <h3 className="text-lg font-bold text-foreground mb-4">Posizione</h3>
-                  <div className="rounded-xl overflow-hidden h-80 border border-gray-200 relative">
-                    <MapView 
-                      initialCenter={store.coordinates}
-                      initialZoom={16}
-                      onMapReady={(map: google.maps.Map) => {
-                        new google.maps.Marker({
-                          map: map,
-                          position: store.coordinates,
-                          title: store.name,
-                        });
-                      }}
-                    />
-                  </div>
+                  <p className="text-gray-600 mb-4">{store.plusCode}</p>
                   {/* Bottone Google Maps */}
                   <a
                     href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(store.plusCode)}`}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="mt-4 inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-3 rounded-xl transition-colors"
+                    className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-3 rounded-xl transition-colors"
                   >
                     📍 Apri su Google Maps
                   </a>
