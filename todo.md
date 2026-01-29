@@ -77,3 +77,6 @@
 
 ## Nuovo Negozio Pizzeria Borgo San Michele
 - [x] Aggiungere Pizzeria Borgo San Michele nella categoria Cibo con sconto 10%
+
+## Bottone Google Maps
+- [x] Aggiungere bottone "Apri su Google Maps" sotto ogni negozio in tutte le categorie

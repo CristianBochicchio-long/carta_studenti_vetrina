@@ -11,6 +11,7 @@ export default function AbbigliamentoPage() {
       discount: "10%",
       logo: "/loghi/vanity.png",
       coordinates: { lat: 40.6413, lng: 15.7944 },
+      plusCode: "JRR3+VV Potenza",
     },
     {
       id: 2,
@@ -18,6 +19,7 @@ export default function AbbigliamentoPage() {
       discount: "10%",
       logo: "/loghi/mina.png",
       coordinates: { lat: 40.6406, lng: 15.7924 },
+      plusCode: "JRP3+6R Potenza",
     },
     {
       id: 3,
@@ -25,6 +27,7 @@ export default function AbbigliamentoPage() {
       discount: "10%",
       logo: "/loghi/lifestyle.png",
       coordinates: { lat: 40.6410, lng: 15.7948 },
+      plusCode: "JRQ3+FV Potenza",
     },
     {
       id: 4,
@@ -32,6 +35,7 @@ export default function AbbigliamentoPage() {
       discount: "10%",
       logo: "/loghi/noemi.png",
       coordinates: { lat: 40.6415, lng: 15.7930 },
+      plusCode: "JRW3+M4 Potenza",
     },
     {
       id: 5,
@@ -39,6 +43,7 @@ export default function AbbigliamentoPage() {
       discount: "Extra 20% in non-promozione, Extra 5% in promozione",
       logo: "/brands-off-price-logo.png",
       coordinates: { lat: 40.6394, lng: 15.7876 },
+      plusCode: "JRJ6+74 Potenza",
     },
   ];
 
@@ -95,6 +100,15 @@ export default function AbbigliamentoPage() {
                       }}
                     />
                   </div>
+                  {/* Bottone Google Maps */}
+                  <a
+                    href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(store.plusCode)}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="mt-4 inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-3 rounded-xl transition-colors"
+                  >
+                    📍 Apri su Google Maps
+                  </a>
                 </div>
               </div>
             </div>

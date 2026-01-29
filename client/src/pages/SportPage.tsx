@@ -11,6 +11,7 @@ export default function SportPage() {
       discount: "15%",
       logo: "/loghi/greenvillage.webp",
       coordinates: { lat: 40.6456, lng: 15.7956 },
+      plusCode: "JRVW+62 Potenza",
       website: "https://greenvillagepotenza.it",
       description: "Calcetto, Padel e Lezioni di Padel",
     },
@@ -80,6 +81,15 @@ export default function SportPage() {
                         });
                       }}
                     />
+                  {/* Bottone Google Maps */}
+                  <a
+                    href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(store.plusCode)}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="mt-4 inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-3 rounded-xl transition-colors"
+                  >
+                    📍 Apri su Google Maps
+                  </a>
                   </div>
                 </div>
               </div>

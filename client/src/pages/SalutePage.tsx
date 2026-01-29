@@ -11,6 +11,7 @@ export default function SalutePage() {
       discount: "15%",
       logo: "/loghi/irene.png",
       coordinates: { lat: 40.5752, lng: 15.7815 },
+      plusCode: "HQGJ+3J Pignola",
     },
     {
       id: 2,
@@ -18,6 +19,7 @@ export default function SalutePage() {
       discount: "10%",
       logo: "/zone14_logo.png",
       coordinates: { lat: 40.6394, lng: 15.7839 },
+      plusCode: "JQQM+QH Potenza",
     },
     {
       id: 3,
@@ -25,6 +27,7 @@ export default function SalutePage() {
       discount: "Offerte Speciali",
       logo: "/loghi/make_difference.jpg",
       coordinates: { lat: 40.6393, lng: 15.7824 },
+      plusCode: "JRW3+M4 Potenza",
       offers: [
         {
           title: "Colore + piega 'Study Break'",
@@ -110,6 +113,15 @@ export default function SalutePage() {
                       }}
                     />
                   </div>
+                  {/* Bottone Google Maps */}
+                  <a
+                    href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(store.plusCode)}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="mt-4 inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-3 rounded-xl transition-colors"
+                  >
+                    📍 Apri su Google Maps
+                  </a>
                 </div>
               </div>
             </div>

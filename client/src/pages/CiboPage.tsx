@@ -11,6 +11,7 @@ export default function CiboPage() {
       discount: "10%",
       logo: "/loghi/mancino.jpg",
       coordinates: { lat: 40.6402, lng: 15.7886 },
+      plusCode: "JQMR+2J Potenza",
     },
     {
       id: 2,
@@ -18,6 +19,7 @@ export default function CiboPage() {
       discount: "15%",
       logo: "/loghi/numberone.jpg",
       coordinates: { lat: 40.6410, lng: 15.7962 },
+      plusCode: "JRQ4+H9 Potenza",
     },
     {
       id: 3,
@@ -25,6 +27,7 @@ export default function CiboPage() {
       discount: "10%",
       logo: "/loghi/chiatto.png",
       coordinates: { lat: 40.6394, lng: 15.7824 },
+      plusCode: "JQWW+XH Potenza",
     },
     {
       id: 4,
@@ -32,6 +35,7 @@ export default function CiboPage() {
       discount: "10%",
       logo: "/loghi/gelateria_oliveto.png",
       coordinates: { lat: 40.6435, lng: 15.7898 },
+      plusCode: "JQVQ+9W Potenza",
     },
     {
       id: 5,
@@ -39,6 +43,7 @@ export default function CiboPage() {
       discount: "10%",
       logo: "/loghi/capatosta_bakery.jpg",
       coordinates: { lat: 40.6413151, lng: 15.8129099 },
+      plusCode: "40.6413151,15.8129099",
     },
     {
       id: 6,
@@ -46,6 +51,7 @@ export default function CiboPage() {
       discount: "10%",
       logo: "/bar-principe-logo.png",
       coordinates: { lat: 40.6422, lng: 15.8012 },
+      plusCode: "JRX2+GG Potenza",
     },
   ];
 
@@ -102,6 +108,15 @@ export default function CiboPage() {
                       }}
                     />
                   </div>
+                  {/* Bottone Google Maps */}
+                  <a
+                    href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(store.plusCode)}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="mt-4 inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-3 rounded-xl transition-colors"
+                  >
+                    📍 Apri su Google Maps
+                  </a>
                 </div>
               </div>
             </div>

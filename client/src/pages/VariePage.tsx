@@ -11,6 +11,7 @@ export default function VariePage() {
       discount: "5%",
       logo: "/loghi/svapomania.jpg",
       coordinates: { lat: 40.6528, lng: 15.7981 },
+      plusCode: "JQQJ+QX Potenza",
     },
     {
       id: 2,
@@ -18,6 +19,7 @@ export default function VariePage() {
       discount: "10%",
       logo: "/loghi/princess.png",
       coordinates: { lat: 40.6393, lng: 15.7824 },
+      plusCode: "JQQJ+QX Potenza",
     },
     {
       id: 3,
@@ -25,6 +27,7 @@ export default function VariePage() {
       discount: "10% + svariate promozioni",
       logo: "/loghi/riviello.png",
       coordinates: { lat: 40.6383, lng: 15.8028 },
+      plusCode: "https://maps.app.goo.gl/sZpirPEw1dkD7Ujo9",
       website: "https://riviellogioielli.it",
     },
     {
@@ -33,6 +36,7 @@ export default function VariePage() {
       discount: "15%",
       logo: "/festidea_logo.jpg",
       coordinates: { lat: 40.6528, lng: 15.7981 },
+      plusCode: "MQ3X+46 Potenza",
       website: "https://festidea.it",
     },
     {
@@ -41,6 +45,7 @@ export default function VariePage() {
       discount: "10%",
       logo: "/cineatro-don-bosco-10.png",
       coordinates: { lat: 40.6484, lng: 15.7963 },
+      plusCode: "JQXW+3F Potenza",
     },
     {
       id: 6,
@@ -48,6 +53,7 @@ export default function VariePage() {
       discount: "10%",
       logo: "/potenza-experience-logo.png",
       coordinates: { lat: 40.6389, lng: 15.8061 },
+      plusCode: "8FGQJRQ4+X6",
     },
   ];
 
@@ -114,6 +120,15 @@ export default function VariePage() {
                         });
                       }}
                     />
+                  {/* Bottone Google Maps */}
+                  <a
+                    href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(store.plusCode)}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="mt-4 inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-3 rounded-xl transition-colors"
+                  >
+                    📍 Apri su Google Maps
+                  </a>
                   </div>
                 </div>
               </div>
