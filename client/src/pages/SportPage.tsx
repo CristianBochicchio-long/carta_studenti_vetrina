@@ -10,7 +10,7 @@ export default function SportPage() {
       name: "Green Village Sporting Club",
       discount: "15%",
       logo: "/loghi/greenvillage.webp",
-      coordinates: { lat: 40.6430736, lng: 15.8266266 }, // JRVW+62 Potenza
+      coordinates: { lat: 40.6450, lng: 15.8100 }, // JRVW+62 Potenza
       website: "https://greenvillagepotenza.it",
       description: "Calcetto, Padel e Lezioni di Padel",
     },

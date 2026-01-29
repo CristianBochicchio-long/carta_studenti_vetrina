@@ -10,28 +10,28 @@ export default function CiboPage() {
       name: "Pasticceria Mancino",
       discount: "10%",
       logo: "/loghi/mancino.jpg",
-      coordinates: { lat: 40.6388962, lng: 15.8006009 }, // JQMR+2J Potenza
+      coordinates: { lat: 40.6380, lng: 15.7980 }, // JQMR+2J Potenza
     },
     {
       id: 2,
       name: "Number One Community Bar",
       discount: "15%",
       logo: "/loghi/numberone.jpg",
-      coordinates: { lat: 40.6380946, lng: 15.8013649 }, // JRQ4+H9 Potenza
+      coordinates: { lat: 40.6387, lng: 15.8050 }, // JRQ4+H9 Potenza
     },
     {
       id: 3,
       name: "Chiattò",
       discount: "10%",
       logo: "/loghi/chiatto.png",
-      coordinates: { lat: 40.6473962, lng: 15.7964117 }, // JQWW+XH Potenza
+      coordinates: { lat: 40.6380, lng: 15.7960 }, // JQWW+XH Potenza
     },
     {
       id: 4,
       name: "Gelateria Oliveto",
       discount: "10%",
       logo: "/loghi/gelateria_oliveto.png",
-      coordinates: { lat: 40.6434657, lng: 15.789762 }, // JQVQ+9W Potenza
+      coordinates: { lat: 40.6380, lng: 15.8150 }, // JQVQ+9W Potenza
     },
     {
       id: 5,
@@ -45,7 +45,7 @@ export default function CiboPage() {
       name: "Bar Principe",
       discount: "10%",
       logo: "/bar-principe-logo.png",
-      coordinates: { lat: 40.6393, lng: 15.7824 }, // JRX2+GG Potenza
+      coordinates: { lat: 40.6413, lng: 15.8046 }, // JRX2+GG Potenza
     },
   ];
 

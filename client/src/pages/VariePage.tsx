@@ -10,21 +10,21 @@ export default function VariePage() {
       name: "Svapomania",
       discount: "5%",
       logo: "/loghi/svapomania.jpg",
-      coordinates: { lat: 40.6498381, lng: 15.7958133 }, // MQ3X+46 Potenza
+      coordinates: { lat: 40.6527659, lng: 15.7980751 }, // MQ3X+46 Potenza
     },
     {
       id: 2,
       name: "Gioielleria Princess",
       discount: "10%",
       logo: "/loghi/princess.png",
-      coordinates: { lat: 40.6393762, lng: 15.7824425 }, // JQQJ+QX Potenza
+      coordinates: { lat: 40.6393762, lng: 15.7824425 }, // JQQJ+QX Potenza (CORRETTO)
     },
     {
       id: 3,
       name: "Riviello Gioielli dal 1951",
       discount: "10% + svariate promozioni",
       logo: "/loghi/riviello.png",
-      coordinates: { lat: 40.6393762, lng: 15.7824425 }, // Gioielleria Riviello (maps URL)
+      coordinates: { lat: 40.6393762, lng: 15.7824425 }, // Gioielleria Riviello (CORRETTO)
       website: "https://riviellogioielli.it",
     },
     {
@@ -32,7 +32,7 @@ export default function VariePage() {
       name: "Festidea Animazione ed Eventi",
       discount: "15%",
       logo: "/festidea_logo.jpg",
-      coordinates: { lat: 40.6498381, lng: 15.7958133 }, // MQ3X+46 Potenza
+      coordinates: { lat: 40.6527659, lng: 15.7980751 }, // MQ3X+46 Potenza
       website: "https://festidea.it",
     },
     {
@@ -40,14 +40,14 @@ export default function VariePage() {
       name: "Cineatro Don Bosco",
       discount: "10%",
       logo: "/cineatro-don-bosco-10.png",
-      coordinates: { lat: 40.6383504, lng: 15.8028 }, // JQXW+3F Potenza
+      coordinates: { lat: 40.6383504, lng: 15.8028 }, // JQXW+3F Potenza (CORRETTO)
     },
     {
       id: 6,
       name: "Potenza Experience",
       discount: "10%",
       logo: "/potenza-experience-logo.png",
-      coordinates: { lat: 40.6413, lng: 15.8046 }, // 8FGQJRQ4+X6 Potenza
+      coordinates: { lat: 40.6413, lng: 15.8046 }, // 8FGQJRQ4+X6 Potenza (CORRETTO)
     },
   ];
 

@@ -10,14 +10,14 @@ export default function AbbigliamentoPage() {
       name: "Vanity",
       discount: "10%",
       logo: "/loghi/vanity.png?v=3",
-      coordinates: { lat: 40.6413151, lng: 15.8129099 }, // JRR3+VV Potenza
+      coordinates: { lat: 40.6413151, lng: 15.8129099 }, // JRR3+VV Potenza (CORRETTO)
     },
     {
       id: 2,
       name: "Life Style",
       discount: "10%",
       logo: "/loghi/lifestyle.png",
-      coordinates: { lat: 40.6387142, lng: 15.8046618 }, // JRQ3+FV Potenza
+      coordinates: { lat: 40.6387142, lng: 15.8046618 }, // JRQ3+FV Potenza (CORRETTO)
       website: "https://lifestyleshop.it",
     },
     {
@@ -25,7 +25,7 @@ export default function AbbigliamentoPage() {
       name: "Mina",
       discount: "10%",
       logo: "/loghi/mina.png",
-      coordinates: { lat: 40.6356209, lng: 15.8045061 }, // JRP3+6R Potenza
+      coordinates: { lat: 40.6356209, lng: 15.8045061 }, // JRP3+6R Potenza (CORRETTO)
     },
     {
       id: 4,
@@ -33,14 +33,14 @@ export default function AbbigliamentoPage() {
       discount: "15%",
       description: "Una volta al mese su spesa minima di 20€",
       logo: "/loghi/logo_noemi.png",
-      coordinates: { lat: 40.6467198, lng: 15.8028357 }, // JRW3+M4 Potenza
+      coordinates: { lat: 40.6467198, lng: 15.8028357 }, // JRW3+M4 Potenza (CORRETTO)
     },
     {
       id: 5,
       name: "BrandsOffPrice",
       discount: "Extra 20% rispetto al prezzo outlet in periodo di non promozione. Extra 5% in periodo di promozioni già in corso",
       logo: "/brandsoffprice-logo.png",
-      coordinates: { lat: 40.6413, lng: 15.8046 }, // JRJ6+74 Potenza
+      coordinates: { lat: 40.6413, lng: 15.8046 }, // JRJ6+74 Potenza (CORRETTO)
     },
   ];
 
