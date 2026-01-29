@@ -10,14 +10,14 @@ export default function SalutePage() {
       name: "Irene Beauty Specialist",
       discount: "15%",
       logo: "/loghi/irene.png",
-      coordinates: { lat: 40.6200, lng: 15.7500 }, // HQGJ+3J Pignola
+      coordinates: { lat: 40.5752, lng: 15.7815 }, // HQGJ+3J Pignola
     },
     {
       id: 3,
       name: "Zone 14 barber shop",
       discount: "10%",
       logo: "/zone14_logo.png",
-      coordinates: { lat: 40.6393, lng: 15.7890 }, // JQQM+QH Potenza
+      coordinates: { lat: 40.6394, lng: 15.7839 }, // JQQM+QH Potenza
       website: "zone14barbershop.it"
     },
     {
@@ -25,7 +25,7 @@ export default function SalutePage() {
       name: "Make Difference",
       discount: "Offerte Speciali",
       logo: "/loghi/make_difference.jpg?v=1",
-      coordinates: { lat: 40.6393762, lng: 15.7824425 }, // JQQJ+QX Potenza
+      coordinates: { lat: 40.6393, lng: 15.7824 }, // JQQJ+QX Potenza
       offers: [
         {
           title: "Colore + piega 'Study Break'",
@@ -75,31 +75,22 @@ export default function SalutePage() {
                   <h2 className="text-3xl font-bold text-foreground mb-4">{store.name}</h2>
                   
                   {/* Discount Badge */}
-                  <div className="bg-pink-500 text-white rounded-xl px-6 py-3 text-center font-bold text-2xl">
-                    {store.discount}
+                  <div className="bg-green-500 text-white rounded-xl px-6 py-3 text-center font-bold text-2xl">
+                    Sconto {store.discount}
                   </div>
-                  
-                  {/* Website Link */}
-                  {store.website && (
-                    <a 
-                      href={`https://${store.website}`} 
-                      target="_blank" 
-                      rel="noopener noreferrer"
-                      className="mt-4 text-blue-600 hover:text-blue-800 font-semibold underline"
-                    >
-                      Visita il sito →
-                    </a>
-                  )}
-                  
-                  {/* Offers List for Make Difference */}
+
+                  {/* Offers List */}
                   {store.offers && (
-                    <div className="mt-6 w-full space-y-3">
-                      {store.offers.map((offer, idx) => (
-                        <div key={idx} className="bg-blue-50 border border-blue-200 rounded-lg p-3">
-                          <h4 className="font-bold text-blue-900 text-sm">{offer.title}</h4>
-                          <p className="text-blue-700 text-xs mt-1">{offer.description}</p>
-                        </div>
-                      ))}
+                    <div className="mt-6 w-full">
+                      <h3 className="text-lg font-bold text-foreground mb-3">Offerte:</h3>
+                      <ul className="space-y-2">
+                        {store.offers.map((offer, idx) => (
+                          <li key={idx} className="bg-gray-50 p-3 rounded-lg">
+                            <p className="font-semibold text-foreground">{offer.title}</p>
+                            <p className="text-sm text-gray-600">{offer.description}</p>
+                          </li>
+                        ))}
+                      </ul>
                     </div>
                   )}
                 </div>
@@ -120,13 +111,6 @@ export default function SalutePage() {
                         });
                       }}
                     />
-                    {/* HTML Overlay Marker - always visible */}
-                    <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-full pointer-events-none z-50">
-                      <div className="relative">
-                        <div className="w-8 h-8 bg-red-500 rounded-full border-4 border-white shadow-lg"></div>
-                        <div className="absolute top-full left-1/2 -translate-x-1/2 w-0 h-0 border-l-[8px] border-l-transparent border-r-[8px] border-r-transparent border-t-[12px] border-t-red-500"></div>
-                      </div>
-                    </div>
                   </div>
                 </div>
               </div>

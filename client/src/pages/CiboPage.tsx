@@ -10,42 +10,42 @@ export default function CiboPage() {
       name: "Pasticceria Mancino",
       discount: "10%",
       logo: "/loghi/mancino.jpg",
-      coordinates: { lat: 40.6380, lng: 15.7980 }, // JQMR+2J Potenza
+      coordinates: { lat: 40.6388, lng: 15.8006 }, // JQMR+2J Potenza
     },
     {
       id: 2,
       name: "Number One Community Bar",
       discount: "15%",
       logo: "/loghi/numberone.jpg",
-      coordinates: { lat: 40.6387, lng: 15.8050 }, // JRQ4+H9 Potenza
+      coordinates: { lat: 40.6387, lng: 15.8063 }, // JRQ4+H9 Potenza
     },
     {
       id: 3,
       name: "Chiattò",
       discount: "10%",
       logo: "/loghi/chiatto.png",
-      coordinates: { lat: 40.6380, lng: 15.7960 }, // JQWW+XH Potenza
+      coordinates: { lat: 40.6474, lng: 15.7964 }, // JQWW+XH Potenza
     },
     {
       id: 4,
       name: "Gelateria Oliveto",
       discount: "10%",
       logo: "/loghi/gelateria_oliveto.png",
-      coordinates: { lat: 40.6380, lng: 15.8150 }, // JQVQ+9W Potenza
+      coordinates: { lat: 40.6435, lng: 15.7898 }, // JQVQ+9W Potenza
     },
     {
       id: 5,
       name: "Capatosta Bakery",
       discount: "10%",
       logo: "/loghi/capatosta_bakery.jpg",
-      coordinates: { lat: 40.6413151, lng: 15.8129099 }, // Capatosta Bakery
+      coordinates: { lat: 40.6413151, lng: 15.8129099 }, // Coordinate esatte
     },
     {
       id: 6,
       name: "Bar Principe",
       discount: "10%",
       logo: "/bar-principe-logo.png",
-      coordinates: { lat: 40.6413, lng: 15.8046 }, // JRX2+GG Potenza
+      coordinates: { lat: 40.6488, lng: 15.8013 }, // JRX2+GG Potenza
     },
   ];
 
@@ -102,13 +102,6 @@ export default function CiboPage() {
                         });
                       }}
                     />
-                    {/* HTML Overlay Marker - always visible */}
-                    <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-full pointer-events-none z-50">
-                      <div className="relative">
-                        <div className="w-8 h-8 bg-red-500 rounded-full border-4 border-white shadow-lg"></div>
-                        <div className="absolute top-full left-1/2 -translate-x-1/2 w-0 h-0 border-l-[8px] border-l-transparent border-r-[8px] border-r-transparent border-t-[12px] border-t-red-500"></div>
-                      </div>
-                    </div>
                   </div>
                 </div>
               </div>

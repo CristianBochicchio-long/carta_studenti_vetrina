@@ -10,21 +10,21 @@ export default function VariePage() {
       name: "Svapomania",
       discount: "5%",
       logo: "/loghi/svapomania.jpg",
-      coordinates: { lat: 40.6527659, lng: 15.7980751 }, // MQ3X+46 Potenza
+      coordinates: { lat: 40.6528, lng: 15.7981 }, // MQ3X+46 Potenza
     },
     {
       id: 2,
       name: "Gioielleria Princess",
       discount: "10%",
       logo: "/loghi/princess.png",
-      coordinates: { lat: 40.6393762, lng: 15.7824425 }, // JQQJ+QX Potenza (CORRETTO)
+      coordinates: { lat: 40.6393, lng: 15.7824 }, // JQQJ+QX Potenza
     },
     {
       id: 3,
       name: "Riviello Gioielli dal 1951",
       discount: "10% + svariate promozioni",
       logo: "/loghi/riviello.png",
-      coordinates: { lat: 40.6393762, lng: 15.7824425 }, // Gioielleria Riviello (CORRETTO)
+      coordinates: { lat: 40.6383, lng: 15.8028 }, // Google Maps URL
       website: "https://riviellogioielli.it",
     },
     {
@@ -32,7 +32,7 @@ export default function VariePage() {
       name: "Festidea Animazione ed Eventi",
       discount: "15%",
       logo: "/festidea_logo.jpg",
-      coordinates: { lat: 40.6527659, lng: 15.7980751 }, // MQ3X+46 Potenza
+      coordinates: { lat: 40.6528, lng: 15.7981 }, // MQ3X+46 Potenza
       website: "https://festidea.it",
     },
     {
@@ -40,14 +40,14 @@ export default function VariePage() {
       name: "Cineatro Don Bosco",
       discount: "10%",
       logo: "/cineatro-don-bosco-10.png",
-      coordinates: { lat: 40.6383504, lng: 15.8028 }, // JQXW+3F Potenza (CORRETTO)
+      coordinates: { lat: 40.6484, lng: 15.7963 }, // JQXW+3F Potenza
     },
     {
       id: 6,
       name: "Potenza Experience",
       discount: "10%",
       logo: "/potenza-experience-logo.png",
-      coordinates: { lat: 40.6413, lng: 15.8046 }, // 8FGQJRQ4+X6 Potenza (CORRETTO)
+      coordinates: { lat: 40.6389, lng: 15.8061 }, // JRQ4+X6 Potenza
     },
   ];
 
@@ -83,17 +83,16 @@ export default function VariePage() {
                   <h2 className="text-3xl font-bold text-foreground mb-4">{store.name}</h2>
                   
                   {/* Discount Badge */}
-                  <div className="bg-pink-500 text-white rounded-xl px-6 py-3 text-center font-bold text-2xl">
+                  <div className="bg-purple-500 text-white rounded-xl px-6 py-3 text-center font-bold text-2xl">
                     Sconto {store.discount}
                   </div>
-                  
-                  {/* Website Link */}
+
                   {store.website && (
                     <a 
                       href={store.website} 
                       target="_blank" 
                       rel="noopener noreferrer"
-                      className="mt-4 text-blue-600 hover:text-blue-800 font-semibold underline"
+                      className="mt-4 text-primary font-semibold hover:underline"
                     >
                       Visita il sito →
                     </a>
@@ -116,13 +115,6 @@ export default function VariePage() {
                         });
                       }}
                     />
-                    {/* HTML Overlay Marker - always visible */}
-                    <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-full pointer-events-none z-50">
-                      <div className="relative">
-                        <div className="w-8 h-8 bg-red-500 rounded-full border-4 border-white shadow-lg"></div>
-                        <div className="absolute top-full left-1/2 -translate-x-1/2 w-0 h-0 border-l-[8px] border-l-transparent border-r-[8px] border-r-transparent border-t-[12px] border-t-red-500"></div>
-                      </div>
-                    </div>
                   </div>
                 </div>
               </div>

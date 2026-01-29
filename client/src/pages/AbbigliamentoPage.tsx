@@ -10,14 +10,14 @@ export default function AbbigliamentoPage() {
       name: "Vanity",
       discount: "10%",
       logo: "/loghi/vanity.png?v=3",
-      coordinates: { lat: 40.6413151, lng: 15.8129099 }, // JRR3+VV Potenza (CORRETTO)
+      coordinates: { lat: 40.6418, lng: 15.8048 }, // JRR3+VV Potenza
     },
     {
       id: 2,
       name: "Life Style",
       discount: "10%",
       logo: "/loghi/lifestyle.png",
-      coordinates: { lat: 40.6387142, lng: 15.8046618 }, // JRQ3+FV Potenza (CORRETTO)
+      coordinates: { lat: 40.6387, lng: 15.8047 }, // JRQ3+FV Potenza
       website: "https://lifestyleshop.it",
     },
     {
@@ -25,7 +25,7 @@ export default function AbbigliamentoPage() {
       name: "Mina",
       discount: "10%",
       logo: "/loghi/mina.png",
-      coordinates: { lat: 40.6356209, lng: 15.8045061 }, // JRP3+6R Potenza (CORRETTO)
+      coordinates: { lat: 40.6356, lng: 15.8045 }, // JRP3+6R Potenza
     },
     {
       id: 4,
@@ -33,14 +33,14 @@ export default function AbbigliamentoPage() {
       discount: "15%",
       description: "Una volta al mese su spesa minima di 20€",
       logo: "/loghi/logo_noemi.png",
-      coordinates: { lat: 40.6467198, lng: 15.8028357 }, // JRW3+M4 Potenza (CORRETTO)
+      coordinates: { lat: 40.6467, lng: 15.8028 }, // JRW3+M4 Potenza
     },
     {
       id: 5,
       name: "BrandsOffPrice",
       discount: "Extra 20% rispetto al prezzo outlet in periodo di non promozione. Extra 5% in periodo di promozioni già in corso",
       logo: "/brandsoffprice-logo.png",
-      coordinates: { lat: 40.6413, lng: 15.8046 }, // JRJ6+74 Potenza (CORRETTO)
+      coordinates: { lat: 40.6313, lng: 15.8106 }, // JRJ6+74 Potenza
     },
   ];
 
@@ -80,23 +80,8 @@ export default function AbbigliamentoPage() {
                     Sconto {store.discount}
                   </div>
                   
-                  {/* Description */}
                   {store.description && (
-                    <p className="mt-3 text-sm text-muted-foreground text-center">
-                      {store.description}
-                    </p>
-                  )}
-                  
-                  {/* Website Link */}
-                  {store.website && (
-                    <a 
-                      href={store.website} 
-                      target="_blank" 
-                      rel="noopener noreferrer"
-                      className="mt-4 text-primary font-semibold hover:underline"
-                    >
-                      Visita il sito →
-                    </a>
+                    <p className="text-sm text-gray-600 mt-2 text-center">{store.description}</p>
                   )}
                 </div>
 
@@ -116,13 +101,6 @@ export default function AbbigliamentoPage() {
                         });
                       }}
                     />
-                    {/* HTML Overlay Marker - always visible */}
-                    <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-full pointer-events-none z-50">
-                      <div className="relative">
-                        <div className="w-8 h-8 bg-red-500 rounded-full border-4 border-white shadow-lg"></div>
-                        <div className="absolute top-full left-1/2 -translate-x-1/2 w-0 h-0 border-l-[8px] border-l-transparent border-r-[8px] border-r-transparent border-t-[12px] border-t-red-500"></div>
-                      </div>
-                    </div>
                   </div>
                 </div>
               </div>

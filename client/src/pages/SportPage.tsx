@@ -10,7 +10,7 @@ export default function SportPage() {
       name: "Green Village Sporting Club",
       discount: "15%",
       logo: "/loghi/greenvillage.webp",
-      coordinates: { lat: 40.6450, lng: 15.8100 }, // JRVW+62 Potenza
+      coordinates: { lat: 40.6456, lng: 15.7956 }, // JRVW+62 Potenza
       website: "https://greenvillagepotenza.it",
       description: "Calcetto, Padel e Lezioni di Padel",
     },
@@ -49,17 +49,16 @@ export default function SportPage() {
                   <p className="text-gray-600 text-center mb-4">{store.description}</p>
                   
                   {/* Discount Badge */}
-                  <div className="bg-blue-500 text-white rounded-xl px-6 py-3 text-center font-bold text-2xl mb-4">
+                  <div className="bg-blue-500 text-white rounded-xl px-6 py-3 text-center font-bold text-2xl">
                     Sconto {store.discount}
                   </div>
 
-                  {/* Website Link */}
                   {store.website && (
                     <a 
-                      href={store.website} 
+                      href={`https://${store.website}`} 
                       target="_blank" 
                       rel="noopener noreferrer"
-                      className="text-primary font-semibold hover:underline"
+                      className="mt-4 text-primary font-semibold hover:underline"
                     >
                       Visita il sito →
                     </a>
@@ -82,13 +81,6 @@ export default function SportPage() {
                         });
                       }}
                     />
-                    {/* HTML Overlay Marker - always visible */}
-                    <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-full pointer-events-none z-50">
-                      <div className="relative">
-                        <div className="w-8 h-8 bg-red-500 rounded-full border-4 border-white shadow-lg"></div>
-                        <div className="absolute top-full left-1/2 -translate-x-1/2 w-0 h-0 border-l-[8px] border-l-transparent border-r-[8px] border-r-transparent border-t-[12px] border-t-red-500"></div>
-                      </div>
-                    </div>
                   </div>
                 </div>
               </div>
