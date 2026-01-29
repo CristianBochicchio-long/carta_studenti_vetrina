@@ -10,7 +10,7 @@ export default function SportPage() {
       name: "Green Village Sporting Club",
       discount: "15%",
       logo: "/loghi/greenvillage.webp",
-      coordinates: { lat: 40.6456, lng: 15.7956 }, // JRVW+62 Potenza
+      coordinates: { lat: 40.6456, lng: 15.7956 },
       website: "https://greenvillagepotenza.it",
       description: "Calcetto, Padel e Lezioni di Padel",
     },
@@ -71,9 +71,8 @@ export default function SportPage() {
                   <div className="rounded-xl overflow-hidden h-80 border border-gray-200 relative">
                     <MapView 
                       initialCenter={store.coordinates}
-                      initialZoom={15}
+                      initialZoom={16}
                       onMapReady={(map: google.maps.Map) => {
-                        // Create DEFAULT Google Maps marker (red pin)
                         new google.maps.Marker({
                           map: map,
                           position: store.coordinates,

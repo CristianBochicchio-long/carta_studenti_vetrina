@@ -9,38 +9,36 @@ export default function AbbigliamentoPage() {
       id: 1,
       name: "Vanity",
       discount: "10%",
-      logo: "/loghi/vanity.png?v=3",
-      coordinates: { lat: 40.6418, lng: 15.8048 }, // JRR3+VV Potenza
+      logo: "/loghi/vanity.png",
+      coordinates: { lat: 40.6413, lng: 15.7944 },
     },
     {
       id: 2,
-      name: "Life Style",
-      discount: "10%",
-      logo: "/loghi/lifestyle.png",
-      coordinates: { lat: 40.6387, lng: 15.8047 }, // JRQ3+FV Potenza
-      website: "https://lifestyleshop.it",
-    },
-    {
-      id: 3,
       name: "Mina",
       discount: "10%",
       logo: "/loghi/mina.png",
-      coordinates: { lat: 40.6356, lng: 15.8045 }, // JRP3+6R Potenza
+      coordinates: { lat: 40.6406, lng: 15.7924 },
+    },
+    {
+      id: 3,
+      name: "Lifestyle",
+      discount: "10%",
+      logo: "/loghi/lifestyle.png",
+      coordinates: { lat: 40.6410, lng: 15.7948 },
     },
     {
       id: 4,
       name: "Noemi",
-      discount: "15%",
-      description: "Una volta al mese su spesa minima di 20€",
-      logo: "/loghi/logo_noemi.png",
-      coordinates: { lat: 40.6467, lng: 15.8028 }, // JRW3+M4 Potenza
+      discount: "10%",
+      logo: "/loghi/noemi.png",
+      coordinates: { lat: 40.6415, lng: 15.7930 },
     },
     {
       id: 5,
       name: "BrandsOffPrice",
-      discount: "Extra 20% rispetto al prezzo outlet in periodo di non promozione. Extra 5% in periodo di promozioni già in corso",
-      logo: "/brandsoffprice-logo.png",
-      coordinates: { lat: 40.6313, lng: 15.8106 }, // JRJ6+74 Potenza
+      discount: "Extra 20% in non-promozione, Extra 5% in promozione",
+      logo: "/brands-off-price-logo.png",
+      coordinates: { lat: 40.6394, lng: 15.7876 },
     },
   ];
 
@@ -79,10 +77,6 @@ export default function AbbigliamentoPage() {
                   <div className="bg-pink-500 text-white rounded-xl px-6 py-3 text-center font-bold text-2xl">
                     Sconto {store.discount}
                   </div>
-                  
-                  {store.description && (
-                    <p className="text-sm text-gray-600 mt-2 text-center">{store.description}</p>
-                  )}
                 </div>
 
                 {/* Right: Map */}
@@ -91,9 +85,8 @@ export default function AbbigliamentoPage() {
                   <div className="rounded-xl overflow-hidden h-80 border border-gray-200 relative">
                     <MapView 
                       initialCenter={store.coordinates}
-                      initialZoom={15}
+                      initialZoom={16}
                       onMapReady={(map: google.maps.Map) => {
-                        // Create DEFAULT Google Maps marker (red pin)
                         new google.maps.Marker({
                           map: map,
                           position: store.coordinates,

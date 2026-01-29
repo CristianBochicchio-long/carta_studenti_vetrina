@@ -10,21 +10,21 @@ export default function VariePage() {
       name: "Svapomania",
       discount: "5%",
       logo: "/loghi/svapomania.jpg",
-      coordinates: { lat: 40.6528, lng: 15.7981 }, // MQ3X+46 Potenza
+      coordinates: { lat: 40.6528, lng: 15.7981 },
     },
     {
       id: 2,
       name: "Gioielleria Princess",
       discount: "10%",
       logo: "/loghi/princess.png",
-      coordinates: { lat: 40.6393, lng: 15.7824 }, // JQQJ+QX Potenza
+      coordinates: { lat: 40.6393, lng: 15.7824 },
     },
     {
       id: 3,
       name: "Riviello Gioielli dal 1951",
       discount: "10% + svariate promozioni",
       logo: "/loghi/riviello.png",
-      coordinates: { lat: 40.6383, lng: 15.8028 }, // Google Maps URL
+      coordinates: { lat: 40.6383, lng: 15.8028 },
       website: "https://riviellogioielli.it",
     },
     {
@@ -32,7 +32,7 @@ export default function VariePage() {
       name: "Festidea Animazione ed Eventi",
       discount: "15%",
       logo: "/festidea_logo.jpg",
-      coordinates: { lat: 40.6528, lng: 15.7981 }, // MQ3X+46 Potenza
+      coordinates: { lat: 40.6528, lng: 15.7981 },
       website: "https://festidea.it",
     },
     {
@@ -40,14 +40,14 @@ export default function VariePage() {
       name: "Cineatro Don Bosco",
       discount: "10%",
       logo: "/cineatro-don-bosco-10.png",
-      coordinates: { lat: 40.6484, lng: 15.7963 }, // JQXW+3F Potenza
+      coordinates: { lat: 40.6484, lng: 15.7963 },
     },
     {
       id: 6,
       name: "Potenza Experience",
       discount: "10%",
       logo: "/potenza-experience-logo.png",
-      coordinates: { lat: 40.6389, lng: 15.8061 }, // JRQ4+X6 Potenza
+      coordinates: { lat: 40.6389, lng: 15.8061 },
     },
   ];
 
@@ -105,9 +105,8 @@ export default function VariePage() {
                   <div className="rounded-xl overflow-hidden h-80 border border-gray-200 relative">
                     <MapView 
                       initialCenter={store.coordinates}
-                      initialZoom={15}
+                      initialZoom={16}
                       onMapReady={(map: google.maps.Map) => {
-                        // Create DEFAULT Google Maps marker (red pin)
                         new google.maps.Marker({
                           map: map,
                           position: store.coordinates,

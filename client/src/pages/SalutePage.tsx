@@ -10,22 +10,21 @@ export default function SalutePage() {
       name: "Irene Beauty Specialist",
       discount: "15%",
       logo: "/loghi/irene.png",
-      coordinates: { lat: 40.5752, lng: 15.7815 }, // HQGJ+3J Pignola
-    },
-    {
-      id: 3,
-      name: "Zone 14 barber shop",
-      discount: "10%",
-      logo: "/zone14_logo.png",
-      coordinates: { lat: 40.6394, lng: 15.7839 }, // JQQM+QH Potenza
-      website: "zone14barbershop.it"
+      coordinates: { lat: 40.5752, lng: 15.7815 },
     },
     {
       id: 2,
+      name: "Zone 14 barber shop",
+      discount: "10%",
+      logo: "/zone14_logo.png",
+      coordinates: { lat: 40.6394, lng: 15.7839 },
+    },
+    {
+      id: 3,
       name: "Make Difference",
       discount: "Offerte Speciali",
-      logo: "/loghi/make_difference.jpg?v=1",
-      coordinates: { lat: 40.6393, lng: 15.7824 }, // JQQJ+QX Potenza
+      logo: "/loghi/make_difference.jpg",
+      coordinates: { lat: 40.6393, lng: 15.7824 },
       offers: [
         {
           title: "Colore + piega 'Study Break'",
@@ -101,9 +100,8 @@ export default function SalutePage() {
                   <div className="rounded-xl overflow-hidden h-80 border border-gray-200 relative">
                     <MapView 
                       initialCenter={store.coordinates}
-                      initialZoom={15}
+                      initialZoom={16}
                       onMapReady={(map: google.maps.Map) => {
-                        // Create DEFAULT Google Maps marker (red pin)
                         new google.maps.Marker({
                           map: map,
                           position: store.coordinates,
