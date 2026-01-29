@@ -35,6 +35,13 @@ export default function AbbigliamentoPage() {
       logo: "/loghi/logo_noemi.png",
       coordinates: { lat: 40.6467198, lng: 15.8028357 }, // JRW3+M4 Potenza
     },
+    {
+      id: 5,
+      name: "BrandsOffPrice",
+      discount: "Extra 20% rispetto al prezzo outlet in periodo di non promozione. Extra 5% in periodo di promozioni già in corso",
+      logo: "/brandsoffprice-logo.png",
+      coordinates: { lat: 40.6413, lng: 15.8046 }, // JRJ6+74 Potenza
+    },
   ];
 
   return (
