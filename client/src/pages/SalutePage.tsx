@@ -43,6 +43,14 @@ export default function SalutePage() {
         }
       ]
     },
+    {
+      id: 4,
+      name: "New Optical S.r.l.",
+      discount: "25% su tutti gli occhiali",
+      logo: "/new_optical_logo.jpg",
+      coordinates: { lat: 40.6299816, lng: 15.7916722 },
+      plusCode: "JQHR+XM Potenza",
+    },
   ];
 
   return (

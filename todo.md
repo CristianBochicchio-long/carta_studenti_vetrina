@@ -83,3 +83,6 @@
 
 ## Rimozione Mappe
 - [x] Rimuovere componente MapView da tutte le pagine categorie e lasciare solo indirizzo con bottone Google Maps
+
+## New Optical
+- [x] Aggiungere New Optical nella categoria Salute con 25% di sconto su tutti gli occhiali
