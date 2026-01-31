@@ -94,3 +94,6 @@
 
 ## Pagina Contattaci
 - [x] Sistemare pagina Contattaci con solo Instagram @cartastudente
+
+## Deploy su Vercel
+- [x] Rimuovere variabili d'ambiente non necessarie (VITE_APP_LOGO, VITE_ANALYTICS_ENDPOINT, VITE_ANALYTICS_WEBSITE_ID) da index.html per permettere deploy su Vercel
