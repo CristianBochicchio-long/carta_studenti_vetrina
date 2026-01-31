@@ -53,6 +53,14 @@ export default function CiboPage() {
       coordinates: { lat: 40.6422, lng: 15.8012 },
       plusCode: "JRX2+GG Potenza",
     },
+    {
+      id: 7,
+      name: "Barleo - Teknogame Potenza",
+      discount: "20% a partire da 4€ (7:00-15:00)",
+      logo: "/barleo_logo.png",
+      coordinates: { lat: 40.6426757, lng: 15.7897637 },
+      plusCode: "JQVQ+3W Potenza",
+    },
   ];
 
   return (

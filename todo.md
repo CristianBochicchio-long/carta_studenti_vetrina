@@ -97,3 +97,6 @@
 
 ## Deploy su Vercel
 - [x] Rimuovere variabili d'ambiente non necessarie (VITE_APP_LOGO, VITE_ANALYTICS_ENDPOINT, VITE_ANALYTICS_WEBSITE_ID) da index.html per permettere deploy su Vercel
+
+## Bar Leo
+- [x] Aggiungere Bar Leo nella categoria Cibo con 20% di sconto a partire da 4€, orario 7-15, logo dal PDF e posizione da Google Maps
