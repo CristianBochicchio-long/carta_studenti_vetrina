@@ -1,44 +1,9 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
-import { ChevronLeft } from "lucide-react";
-import { useState } from "react";
+import { ChevronLeft, Instagram } from "lucide-react";
 
 export default function ContattiPage() {
-  const [formData, setFormData] = useState({
-    nome: "",
-    email: "",
-    oggetto: "",
-    messaggio: "",
-  });
-  const [loading, setLoading] = useState(false);
-
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    setLoading(true);
-    
-    try {
-      const response = await fetch("/api/contatti", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(formData),
-      });
-      
-      if (response.ok) {
-        alert("Grazie per il tuo messaggio! Ti contatteremo presto.");
-        setFormData({ nome: "", email: "", oggetto: "", messaggio: "" });
-      } else {
-        alert("Errore nell'invio del messaggio. Riprova più tardi.");
-      }
-    } catch (error) {
-      console.error("Error:", error);
-      alert("Errore nell'invio del messaggio. Riprova più tardi.");
-    } finally {
-      setLoading(false);
-    }
-  };
-
   return (
     <div className="min-h-screen flex flex-col bg-white">
       <Header />
@@ -60,120 +25,29 @@ export default function ContattiPage() {
             Contattaci
           </h1>
           <p className="text-sm text-muted-foreground">
-            Abbiamo domande? Siamo qui per aiutarti
+            Seguici su Instagram per rimanere aggiornato
           </p>
         </section>
 
-        {/* Contact Info */}
-        <section className="px-4 py-8">
-          <h2 className="text-xl font-bold text-foreground mb-6">
-            Informazioni di Contatto
-          </h2>
-
-          <div className="space-y-4 mb-8">
-            <div className="bg-slate-50 p-4 rounded-lg">
-              <h3 className="font-bold text-foreground mb-2">Email</h3>
-              <a href="mailto:info@cartastudenti.it" className="text-primary text-sm font-semibold">
-                info@cartastudenti.it
-              </a>
-            </div>
-
-            <div className="bg-slate-50 p-4 rounded-lg">
-              <h3 className="font-bold text-foreground mb-2">Telefono</h3>
-              <a href="tel:+393912345678" className="text-primary text-sm font-semibold">
-                +39 391 234 5678
-              </a>
-            </div>
-
-            <div className="bg-slate-50 p-4 rounded-lg">
-              <h3 className="font-bold text-foreground mb-2">Indirizzo</h3>
-              <p className="text-sm text-muted-foreground">
-                Via Esempio 123<br />
-                00100 Roma (RM)
-              </p>
-            </div>
-
-            <div className="bg-slate-50 p-4 rounded-lg">
-              <h3 className="font-bold text-foreground mb-2">Social</h3>
-              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="text-primary text-sm font-semibold">
-                Seguici su Instagram
-              </a>
-            </div>
-          </div>
-        </section>
-
-        {/* Contact Form */}
-        <section className="px-4 py-8 bg-slate-50">
-          <h2 className="text-xl font-bold text-foreground mb-6">
-            Inviaci un Messaggio
-          </h2>
-
-          <form onSubmit={handleSubmit} className="space-y-4">
-            <div>
-              <label className="block text-sm font-semibold text-foreground mb-2">
-                Nome
-              </label>
-              <input
-                type="text"
-                required
-                value={formData.nome}
-                onChange={(e) => setFormData({ ...formData, nome: e.target.value })}
-                className="w-full px-4 py-3 rounded-lg border border-border focus:outline-none focus:ring-2 focus:ring-primary text-sm"
-                placeholder="Il tuo nome"
-              />
-            </div>
-
-            <div>
-              <label className="block text-sm font-semibold text-foreground mb-2">
-                Email
-              </label>
-              <input
-                type="email"
-                required
-                value={formData.email}
-                onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                className="w-full px-4 py-3 rounded-lg border border-border focus:outline-none focus:ring-2 focus:ring-primary text-sm"
-                placeholder="La tua email"
-              />
-            </div>
-
-            <div>
-              <label className="block text-sm font-semibold text-foreground mb-2">
-                Oggetto
-              </label>
-              <input
-                type="text"
-                required
-                value={formData.oggetto}
-                onChange={(e) => setFormData({ ...formData, oggetto: e.target.value })}
-                className="w-full px-4 py-3 rounded-lg border border-border focus:outline-none focus:ring-2 focus:ring-primary text-sm"
-                placeholder="Oggetto del messaggio"
-              />
-            </div>
-
-            <div>
-              <label className="block text-sm font-semibold text-foreground mb-2">
-                Messaggio
-              </label>
-              <textarea
-                required
-                value={formData.messaggio}
-                onChange={(e) => setFormData({ ...formData, messaggio: e.target.value })}
-                className="w-full px-4 py-3 rounded-lg border border-border focus:outline-none focus:ring-2 focus:ring-primary text-sm"
-                placeholder="Il tuo messaggio"
-                rows={5}
-              />
-            </div>
-
-            <Button 
-              type="submit" 
-              size="lg" 
-              disabled={loading}
-              className="w-full bg-primary hover:bg-primary/90 text-white py-6 text-base font-semibold"
+        {/* Instagram Section */}
+        <section className="px-4 py-16 flex flex-col items-center justify-center">
+          <div className="bg-gradient-to-br from-pink-500 to-purple-600 p-8 rounded-3xl shadow-2xl max-w-md w-full text-center">
+            <Instagram size={64} className="mx-auto mb-6 text-white" />
+            <h2 className="text-2xl font-bold text-white mb-4">
+              Seguici su Instagram
+            </h2>
+            <p className="text-white/90 mb-6">
+              Resta aggiornato su tutte le novità, sconti e convenzioni esclusive per gli studenti!
+            </p>
+            <a
+              href="https://instagram.com/cartastudente"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block bg-white text-purple-600 font-bold px-8 py-4 rounded-xl hover:bg-gray-100 transition-colors text-lg"
             >
-              {loading ? "Invio in corso..." : "Invia Messaggio"}
-            </Button>
-          </form>
+              @cartastudente
+            </a>
+          </div>
         </section>
       </main>
 

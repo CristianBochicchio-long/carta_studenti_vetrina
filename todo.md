@@ -86,3 +86,11 @@
 
 ## New Optical
 - [x] Aggiungere New Optical nella categoria Salute con 25% di sconto su tutti gli occhiali
+
+## Spostare Potenza Experience
+- [x] Creare nuova categoria B&B
+- [x] Spostare Potenza Experience da Varie a B&B
+- [x] Aggiornare Home.tsx con nuova categoria B&B
+
+## Pagina Contattaci
+- [x] Sistemare pagina Contattaci con solo Instagram @cartastudente

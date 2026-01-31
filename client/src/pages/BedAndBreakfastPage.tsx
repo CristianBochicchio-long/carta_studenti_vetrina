@@ -1,53 +1,17 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Link } from "wouter";
-import { MapView } from "@/components/Map";
 
-export default function VariePage() {
+export default function BedAndBreakfastPage() {
   const stores = [
     {
       id: 1,
-      name: "Svapomania",
-      discount: "5%",
-      logo: "/loghi/svapomania.jpg",
-      coordinates: { lat: 40.6528, lng: 15.7981 },
-      plusCode: "JQQJ+QX Potenza",
-    },
-    {
-      id: 2,
-      name: "Gioielleria Princess",
+      name: "Potenza Experience",
       discount: "10%",
-      logo: "/loghi/princess.png",
-      coordinates: { lat: 40.6393, lng: 15.7824 },
-      plusCode: "JQQJ+QX Potenza",
+      logo: "/potenza-experience-logo.png",
+      coordinates: { lat: 40.6389, lng: 15.8061 },
+      plusCode: "8FGQJRQ4+X6",
     },
-    {
-      id: 3,
-      name: "Riviello Gioielli dal 1951",
-      discount: "10% + svariate promozioni",
-      logo: "/loghi/riviello.png",
-      coordinates: { lat: 40.6383, lng: 15.8028 },
-      plusCode: "https://maps.app.goo.gl/sZpirPEw1dkD7Ujo9",
-      website: "https://riviellogioielli.it",
-    },
-    {
-      id: 4,
-      name: "Festidea Animazione ed Eventi",
-      discount: "15%",
-      logo: "/festidea_logo.jpg",
-      coordinates: { lat: 40.6528, lng: 15.7981 },
-      plusCode: "MQ3X+46 Potenza",
-      website: "https://festidea.it",
-    },
-    {
-      id: 5,
-      name: "Cineatro Don Bosco",
-      discount: "10%",
-      logo: "/cineatro-don-bosco-10.png",
-      coordinates: { lat: 40.6484, lng: 15.7963 },
-      plusCode: "JQXW+3F Potenza",
-    },
-
   ];
 
   return (
@@ -63,7 +27,10 @@ export default function VariePage() {
         </Link>
 
         {/* Page Title */}
-        <h1 className="text-4xl font-bold text-foreground mb-8">Varie</h1>
+        <h1 className="text-4xl font-bold text-foreground mb-4">B&B</h1>
+        <p className="text-lg text-muted-foreground mb-8">
+          Bed & Breakfast e strutture ricettive
+        </p>
 
         {/* Stores Grid */}
         <div className="grid grid-cols-1 gap-8 mb-12">
@@ -85,17 +52,6 @@ export default function VariePage() {
                   <div className="bg-purple-500 text-white rounded-xl px-6 py-3 text-center font-bold text-2xl">
                     Sconto {store.discount}
                   </div>
-
-                  {store.website && (
-                    <a 
-                      href={store.website} 
-                      target="_blank" 
-                      rel="noopener noreferrer"
-                      className="mt-4 text-primary font-semibold hover:underline"
-                    >
-                      Visita il sito →
-                    </a>
-                  )}
                 </div>
 
                 {/* Right: Indirizzo */}
