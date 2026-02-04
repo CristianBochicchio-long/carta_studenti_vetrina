@@ -69,6 +69,22 @@ export default function CiboPage() {
       coordinates: { lat: 40.6469793, lng: 15.7967429 },
       plusCode: "JQWW+QM Potenza",
     },
+    {
+      id: 9,
+      name: "Antica Caffetteria",
+      discount: "10%",
+      logo: "/antica_caffetteria_logo.jpg",
+      coordinates: { lat: 40.6463, lng: 15.7948 },
+      plusCode: "JRQ4+M5 Potenza",
+    },
+    {
+      id: 10,
+      name: "Pineta Dancing Cafè",
+      discount: "10%",
+      logo: "/pineta_dancing_logo.jpg",
+      coordinates: { lat: 40.6330122, lng: 15.7989644 },
+      plusCode: "JQMX+6H Potenza",
+    },
   ];
 
   return (
