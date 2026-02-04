@@ -25,7 +25,7 @@ export default function Acquista() {
             <div className="mb-8 text-center">
               <div className="bg-gradient-to-br from-primary via-secondary to-primary rounded-2xl p-6 w-fit mx-auto mb-6">
                 <img 
-                  src="/logo-carta-studenti.png" 
+                  src="/logo-carta-studenti.jpg" 
                   alt="Carta Studenti" 
                   className="h-32 w-auto"
                 />

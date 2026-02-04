@@ -24,7 +24,7 @@ export default function AcquistaPage() {
         <section className="px-4 py-8 text-center">
           <div className="bg-gradient-to-br from-primary via-secondary to-primary rounded-2xl p-6 w-fit mx-auto mb-6">
             <img 
-              src="/logo-carta-studenti.png" 
+              src="/logo-carta-studenti.jpg" 
               alt="Carta Studenti" 
               className="h-32 w-auto"
             />
@@ -94,34 +94,6 @@ export default function AcquistaPage() {
           <h2 className="text-xl font-bold text-foreground mb-6 text-center">Contattaci</h2>
           
           <div className="space-y-4 mb-6">
-            {/* Email */}
-            <div className="flex items-center gap-4 bg-white p-4 rounded-2xl">
-              <div className="text-3xl">📧</div>
-              <div className="flex-1">
-                <p className="text-xs text-muted-foreground mb-1">Email</p>
-                <a 
-                  href="mailto:info@cartastudenti.it"
-                  className="text-primary font-semibold hover:underline text-sm"
-                >
-                  info@cartastudenti.it
-                </a>
-              </div>
-            </div>
-
-            {/* Telefono */}
-            <div className="flex items-center gap-4 bg-white p-4 rounded-2xl">
-              <div className="text-3xl">📱</div>
-              <div className="flex-1">
-                <p className="text-xs text-muted-foreground mb-1">Telefono</p>
-                <a 
-                  href="tel:+393001234567"
-                  className="text-primary font-semibold hover:underline text-sm"
-                >
-                  +39 300 123 4567
-                </a>
-              </div>
-            </div>
-
             {/* Instagram */}
             <div className="flex items-center gap-4 bg-white p-4 rounded-2xl">
               <div className="text-3xl">📸</div>
@@ -139,13 +111,8 @@ export default function AcquistaPage() {
             </div>
           </div>
 
-          {/* CTA Buttons */}
-          <div className="space-y-3">
-            <a href="mailto:info@cartastudenti.it">
-              <Button size="lg" className="w-full bg-primary hover:bg-primary/90 text-white py-6 text-base font-semibold">
-                Scrivi un'Email
-              </Button>
-            </a>
+          {/* CTA Button */}
+          <div>
             <a href="https://instagram.com/cartastudenti" target="_blank" rel="noopener noreferrer">
               <Button size="lg" variant="outline" className="w-full py-6 text-base font-semibold">
                 Seguici su Instagram

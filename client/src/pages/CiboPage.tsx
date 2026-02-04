@@ -25,7 +25,7 @@ export default function CiboPage() {
       id: 3,
       name: "Chiattò",
       discount: "10%",
-      logo: "/loghi/chiatto.png",
+      logo: "/loghi/chiatto.jpg",
       coordinates: { lat: 40.6394, lng: 15.7824 },
       plusCode: "JQWW+XH Potenza",
     },

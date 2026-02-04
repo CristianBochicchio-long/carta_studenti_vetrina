@@ -83,7 +83,7 @@ export default function Home() {
             {/* Logo senza riquadro */}
             <div className="mb-3 md:mb-4">
               <img 
-                src="/logo-carta-studenti.png" 
+                src="/logo-carta-studenti.jpg" 
                 alt="Carta Studenti" 
                 className="h-28 md:h-40 w-auto"
               />
