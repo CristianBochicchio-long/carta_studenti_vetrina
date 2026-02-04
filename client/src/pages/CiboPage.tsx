@@ -61,6 +61,14 @@ export default function CiboPage() {
       coordinates: { lat: 40.6426757, lng: 15.7897637 },
       plusCode: "JQVQ+3W Potenza",
     },
+    {
+      id: 8,
+      name: "Caffetteria Don Bosco",
+      discount: "10%",
+      logo: "/caffetteria_don_bosco_logo.jpg",
+      coordinates: { lat: 40.6469793, lng: 15.7967429 },
+      plusCode: "JQWW+QM Potenza",
+    },
   ];
 
   return (
