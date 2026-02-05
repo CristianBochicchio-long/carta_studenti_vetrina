@@ -12,6 +12,14 @@ export default function BedAndBreakfastPage() {
       coordinates: { lat: 40.6389, lng: 15.8061 },
       plusCode: "8FGQJRQ4+X6",
     },
+    {
+      id: 2,
+      name: "Villa Arcobaleno",
+      discount: "150 euro ogni 50 persone (lauree e 18 anni)",
+      logo: "/villa_arcobaleno_logo.jpg",
+      coordinates: { lat: 40.6121439, lng: 15.9497486 },
+      plusCode: "JW6X+VV Brindisi Montagna",
+    },
   ];
 
   return (
