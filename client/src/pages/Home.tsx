@@ -53,7 +53,7 @@ export default function Home() {
       title: "B&B",
       description: "Alloggi e strutture ricettive",
       icon: "🏨",
-      href: "/bb",
+      href: "/bed-and-breakfast",
       color: "bg-gradient-to-br from-amber-500 to-amber-600",
     },
     {
