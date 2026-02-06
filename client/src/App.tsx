@@ -29,6 +29,7 @@ function Router() {
       <Route path={"/varie"} component={VariePage} />
       <Route path={"/sport"} component={SportPage} />
       <Route path={"/bb"} component={BedAndBreakfastPage} />
+      <Route path={"/bed-and-breakfast"} component={BedAndBreakfastPage} />
       <Route path={"/:category"} component={CategoryPage} />
       <Route path={"/404"} component={NotFound} />
       {/* Final fallback route */}
