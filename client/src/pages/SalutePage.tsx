@@ -8,7 +8,7 @@ export default function SalutePage() {
     {
       id: 1,
       name: "Irene Beauty Specialist",
-      discount: "15%",
+      discount: "10%",
       logo: "/loghi/irene.png",
       coordinates: { lat: 40.5752, lng: 15.7815 },
       plusCode: "HQGJ+3J Pignola",

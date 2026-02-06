@@ -47,6 +47,14 @@ export default function VariePage() {
       coordinates: { lat: 40.6484, lng: 15.7963 },
       plusCode: "JQXW+3F Potenza",
     },
+    {
+      id: 6,
+      name: "Villa Arcobaleno",
+      discount: "150 euro ogni 50 persone (lauree e 18 anni)",
+      logo: "/villa_arcobaleno_logo.jpg",
+      coordinates: { lat: 40.6121439, lng: 15.9497486 },
+      plusCode: "JW6X+VV Brindisi Montagna",
+    },
 
   ];
 
