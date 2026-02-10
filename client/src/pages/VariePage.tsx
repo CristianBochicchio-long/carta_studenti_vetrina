@@ -63,6 +63,14 @@ export default function VariePage() {
       coordinates: { lat: 40.6410, lng: 15.7945 },
       plusCode: "JQQJ+5P Potenza",
     },
+    {
+      id: 8,
+      name: "Fire Fly",
+      discount: "5% strumenti, 10% resto",
+      logo: "/firefly-logo.jpg",
+      coordinates: { lat: 40.6456, lng: 15.7892 },
+      plusCode: "JQQJ+6X Potenza",
+    },
 
   ];
 
