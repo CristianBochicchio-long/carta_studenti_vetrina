@@ -55,6 +55,14 @@ export default function VariePage() {
       coordinates: { lat: 40.6121439, lng: 15.9497486 },
       plusCode: "JW6X+VV Brindisi Montagna",
     },
+    {
+      id: 7,
+      name: "Centro Stampa Digitale",
+      discount: "10%",
+      logo: "/centro-stampa-digitale-logo.jpg",
+      coordinates: { lat: 40.6410, lng: 15.7945 },
+      plusCode: "JQQJ+5P Potenza",
+    },
 
   ];
 
