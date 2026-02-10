@@ -45,6 +45,14 @@ export default function AbbigliamentoPage() {
       coordinates: { lat: 40.6394, lng: 15.7876 },
       plusCode: "JRJ6+74 Potenza",
     },
+    {
+      id: 6,
+      name: "Dan John",
+      discount: "10%",
+      logo: "/danjohn-logo.jpg",
+      coordinates: { lat: 40.6440, lng: 15.7890 },
+      plusCode: "JQQJ+7X Potenza",
+    },
   ];
 
   return (
