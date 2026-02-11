@@ -33,7 +33,7 @@ export default function VariePage() {
     {
       id: 4,
       name: "Festidea Animazione ed Eventi",
-      discount: "15%",
+      discount: "50€ netti",
       logo: "/festidea_logo.jpg",
       coordinates: { lat: 40.6528, lng: 15.7981 },
       plusCode: "MQ3X+46 Potenza",
