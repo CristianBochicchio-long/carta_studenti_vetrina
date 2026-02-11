@@ -33,7 +33,7 @@ export default function AbbigliamentoPage() {
       id: 4,
       name: "Noemi",
       discount: "10%",
-      logo: "/noemi-logo.jpg",
+      logo: "/loghi/logo_noemi.png",
       coordinates: { lat: 40.6415, lng: 15.7930 },
       plusCode: "JRW3+M4 Potenza",
     },
