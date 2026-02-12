@@ -51,6 +51,14 @@ export default function SalutePage() {
       coordinates: { lat: 40.6299816, lng: 15.7916722 },
       plusCode: "JQHR+XM Potenza",
     },
+    {
+      id: 5,
+      name: "Moramarco Ottica",
+      discount: "10%",
+      logo: "/moramarco-ottica-logo.jpg",
+      coordinates: { lat: 40.6383, lng: 15.7954 },
+      plusCode: "JQQJ+5J Potenza",
+    },
   ];
 
   return (

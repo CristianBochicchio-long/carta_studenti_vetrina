@@ -48,8 +48,8 @@ export default function CiboPage() {
     {
       id: 6,
       name: "Bar Principe",
-      discount: "10%",
-      logo: "/bar-principe-logo.png",
+      discount: "15%",
+      logo: "/bar-mazzini-logo.jpg",
       coordinates: { lat: 40.6422, lng: 15.8012 },
       plusCode: "JRX2+GG Potenza",
     },
