@@ -37,7 +37,7 @@ export default function VariePage() {
       logo: "/festidea_logo.jpg",
       coordinates: { lat: 40.6528, lng: 15.7981 },
       plusCode: "MQ3X+46 Potenza",
-      website: "https://festidea.it",
+      website: "https://www.instagram.com/effea_show?igsh=aXQwNTZkcXVlN2dw",
     },
     {
       id: 5,
