@@ -71,6 +71,14 @@ export default function VariePage() {
       coordinates: { lat: 40.6456, lng: 15.7892 },
       plusCode: "JQQJ+6X Potenza",
     },
+    {
+      id: 9,
+      name: "Icaro",
+      discount: "Promo ingresso: 1€ di sconto | Promo pizza: Pizza margherita, patatine e bibita a 10€ | Promo feste: 150€ in meno ogni 50 persone (18 anni e lauree)",
+      logo: "/icaro-logo.jpg",
+      coordinates: { lat: 40.6412, lng: 15.7956 },
+      plusCode: "JQQJ+5X Potenza",
+    },
 
   ];
 
