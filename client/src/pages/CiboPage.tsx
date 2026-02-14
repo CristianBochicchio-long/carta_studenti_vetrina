@@ -85,6 +85,14 @@ export default function CiboPage() {
       coordinates: { lat: 40.6330122, lng: 15.7989644 },
       plusCode: "JQMX+6H Potenza",
     },
+    {
+      id: 11,
+      name: "Borgo San Michele Pizzeria",
+      discount: "10%",
+      logo: "/loghi/logo_borgo_san_michele.png",
+      coordinates: { lat: 40.6333, lng: 15.7845 },
+      plusCode: "JQMW+7J Potenza",
+    },
   ];
 
   return (
