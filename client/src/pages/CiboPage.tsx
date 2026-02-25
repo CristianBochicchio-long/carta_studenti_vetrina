@@ -93,6 +93,14 @@ export default function CiboPage() {
       coordinates: { lat: 40.6333, lng: 15.7845 },
       plusCode: "JQMW+7J Potenza",
     },
+    {
+      id: 12,
+      name: "0971 Potenza",
+      discount: "10% di sconto ogni 100€ di spesa",
+      logo: "/loghi/logo_0971.png",
+      coordinates: { lat: 40.6328, lng: 15.7912 },
+      plusCode: "JQMX+8J Potenza",
+    },
   ];
 
   return (
