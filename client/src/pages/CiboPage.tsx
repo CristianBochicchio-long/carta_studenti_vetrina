@@ -64,7 +64,7 @@ export default function CiboPage() {
     {
       id: 8,
       name: "Caffetteria Don Bosco",
-      discount: "10%",
+      discount: "20%",
       logo: "/caffetteria_don_bosco_logo.jpg",
       coordinates: { lat: 40.6469793, lng: 15.7967429 },
       plusCode: "JQWW+QM Potenza",
