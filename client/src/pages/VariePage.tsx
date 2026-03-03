@@ -42,7 +42,7 @@ export default function VariePage() {
     {
       id: 5,
       name: "Cineatro Don Bosco",
-      discount: "10%",
+      discount: "Biglietto ridotto 15-20%",
       logo: "/cineatro-don-bosco-10.png",
       coordinates: { lat: 40.6484, lng: 15.7963 },
       plusCode: "JQXW+3F Potenza",
